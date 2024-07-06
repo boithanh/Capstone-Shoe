@@ -1,101 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Capstone Shoe</title>
+
+<head>
+    <title>Shoe CapstoneJS</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" type="image/x-icon" href="image/Shoe_icon.webp" />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Toastify CSS  -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
-    <!-- Animate CSS  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Main CSS  -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <!-- place navbar here -->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+
+
+    <!-- CSS MAIN  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section class="header--top container-fluid d-sm-block d-none">
+        <div class="content">
+            <div class="header--left">
+                <ul class="mb-0">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header--right">
+                <ul class="mb-0">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="mainHeader">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                                    <li><a class="dropdown-item" href="#">Women's Wear</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Performance Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Casual Shoes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <form class="headerSearch" role="search">
+                            <input class="form-control input_search" type="search" placeholder="Enter Keyword"
+                                aria-label="Search" />
+                            <button class="btn btnSearch" type="submit" title="searchButton">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main></main>
+    <!-- BODY  -->
+    <h1>place footer here</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- FOOTER  -->
     <footer>
-      <!-- place footer here -->
+        <div class="footer--sub">
+            <div class="container-fluid">
+                <div class="footer--text row">
+                    <div class="footer_item1 col-lg-4 col-sm-6">
+                        <div class="archives list-before-icon">
+                            <img src="./image/logo.svg" alt="footer_logo">
+                            <p>1245, North Western Street<br>
+                                Europia. Lumbio</p>
+                            <p>Monday to Friday from 09:00 to 17:00.<br>
+                                Call Us+31 (0) 123 456 789</p>
+                        </div>
+                    </div>
+
+                    <div class="footer_item2 col-lg-2 col-sm-6">
+                        <div class="categories list-before-icon">
+                            <h6>Shop</h6>
+                            <ul class="ps-0">
+                                <li>
+                                    <a href="#">Sneakers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Moccasin</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hiking boot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Oxford shoe</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wellington boot</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_item2 col-lg-2 col-sm-6">
+                        <div class="contact href1--footer">
+                            <h6>Customer</h6>
+                            <ul class="ps-0">
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="#">Create Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shopping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_item3 col-lg-4 col-sm-6">
+                        <div class="about ps-lg-5">
+                            <h6>Sign up to be the first to<br> know about new<br>collections.</h6>
+                            <div class="form-email d-flex">
+                                <form class="form-input-email">
+                                    <input type="email" name="Email" id="email" placeholder="Enter your email"
+                                        class="form-control" />
+                                </form>
+                                <button type="submit" class="btnEmail" title="submitButton"><i
+                                        class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                            <div class="socail-icon">
+                                <ul>
+                                    <li>
+
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="copyright text-center">
+            <div class="container-fluid">
+                <p>
+                    All Right Reserved © 2023 Designthemes
+                </p>
+            </div>
+        </section>
     </footer>
+    <!-- back to top js cody house  -->
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- back to top cody house js  -->
+    <script src="./js/back-to-top-master/assets/js/util.js"></script>
+    <script src="./js/back-to-top-master/assets/js/main.js"></script>
+</body>
 
-    <!-- Toasttify JS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
-
-    <!-- Wow JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      new WOW().init();
-    </script>
-
-    <!-- Back to Top JS -->
-    <script src="vendor/back-to-top/assets/js/main.js"></script>
-    <script src="vendor/back-to-top/assets/js/util.js"></script>
-
-    <!-- Main JS -->
-    <script src="js/util/util.js"></script>
-    <script src="js/validations/validation.js"></script>
-    <script src="js/models/Shoe.js"></script>
-    <script src="js/index.js"></script>
-  </body>
 </html>

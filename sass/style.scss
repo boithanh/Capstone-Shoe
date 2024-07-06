@@ -1,9 +1,8 @@
-@import 'base/reset';
-@import 'base/custom';
-@import 'helpers/variable';
-@import 'helpers/mixin';
-@import 'helpers/animation';
-@import 'helpers/util';
-@import 'layouts/header';
-@import 'layouts/banner';
-@import 'layouts/footer';
+@import './base/reset';
+@import './helpers/variable';
+@import './helpers/mixin';
+@import './base/custom';
+@import './layouts/headertop';
+@import './layouts/headerbottom';
+@import './layouts/footer';
+@import './layouts/backtotop';

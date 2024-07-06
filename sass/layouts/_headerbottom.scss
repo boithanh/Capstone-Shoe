@@ -1,0 +1,64 @@
+header{
+    font-family: "Outfit", sans-serif;
+    font-size: $text-base;
+    font-weight: bold;
+    background-color: $black-100;
+    padding: 11px;
+    .navbar{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .navbar-brand{
+            padding: 0 50px;
+            width: 30%;
+        }
+
+        .navbar-collapse{
+            width: 70%;
+            margin-top: 15px;
+            ul{
+                list-style: none;
+                gap: 10px;
+                li{
+                    .dropdown-menu{
+                        background-color: $black-100;
+                    }
+                    padding: 0 30px;
+                a{
+                    color: $color;
+
+                    &:hover{
+                        color: $yellow-100;
+                    }
+                    &.active{
+                            color: $yellow-100;   
+                    }
+                }
+                
+                }
+            
+            }
+            .headerSearch{
+                display: flex;
+                .input_search{
+                    position: relative;
+                    margin-left: 2rem;
+                }
+                .btnSearch{
+                    position: absolute;
+                    background-color: $orange-100;
+                    color: $color;
+                    right: 10px;
+                    transition: all 0.5s;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $yellow-100;
+                        color: $black-100;
+                    }
+                }
+
+            }
+        }
+    }
+}
