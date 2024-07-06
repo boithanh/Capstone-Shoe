@@ -1,0 +1,103 @@
+footer{
+    background-color: $black-100;
+    color: $color;
+    padding: 0 40px;
+    font-size: 16px;
+    .footer--sub{
+        padding-top: 80px;
+        margin:80px;
+        .footer_item1{
+            p{
+                margin: 41px 0;
+            }
+        }
+        .footer_item2{
+            h6{
+                font-weight: 400;
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-family: "Audiowide", sans-serif;
+            }
+           ul{
+            li{
+                margin-bottom: 10px;
+                padding: 6px;
+                list-style: none;
+                a{
+                color: $color;
+                &:hover{
+                    color: $yellow-100;
+                }
+                }  
+            }
+           } 
+        }
+        .footer_item3{
+            .about{
+            h6{
+                color: $orange-100;
+                font-size: 24px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+                font-family: "Audiowide", sans-serif;
+            } 
+            .form-email{
+                display: flex;
+                .form-input-email{
+                    position: relative;
+                    margin-left: 2rem;
+                    width: 300px;
+
+                }
+                .btnEmail{
+                    position: absolute;
+                    background-color: $orange-100;
+                    color: $color;
+                    right: 180px;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 8px;
+                    transition: all 0.5s;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $yellow-100;
+                        color: $black-100;
+                    }
+                }
+                
+            }
+            .socail-icon{
+                margin-top: 20px;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        padding: 11px;
+                        a{
+                        display: inline-block;
+                        margin-right: 10px;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        cursor: pointer;
+                        background-color: $color;
+                        border-radius: 50%;
+                        transition: all 0.5s;
+                        color: $black-100;
+                        &:hover{
+                                color: $yellow-100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+}
