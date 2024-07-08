@@ -1,0 +1,47 @@
+.registerForm{
+    margin: $mr-100 0;
+
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=phone]
+    {
+       @include styleInput(10px 30px, $text-base, $color, 1px solid $grey-200, 50px);
+     
+    }
+
+    input[type=radio]{
+        background-color: $orange-100;
+        font-size: $text-2xl;
+
+    }
+ label{
+        font-size: $text-2xl;
+    }
+
+    .register_content{
+        // width: 70%;
+        background-color: $grey-100;
+        padding: 40px;
+
+        .btnGroup{
+            margin: auto;
+            text-align: center;
+        .btn-orange{
+            @include styleButton($orange-100,$color,1px, none, $yellow-100,black);
+            }
+        }
+    }
+.title_form{
+    a{
+        font-family:  "Audiowide", sans-serif;
+        color: black;
+        transition: all .5s;
+        &:hover{
+            color: $yellow-100;
+        }
+    }
+
+}
+
+}
