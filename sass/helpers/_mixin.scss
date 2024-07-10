@@ -1,47 +1,54 @@
 // Kiểu dáng của button: màu nền, màu chữ, padding
 // border, border-radius, font-size, hover
-@mixin styleButton($bg,$color, $border-width, $shadow, $bg-hover, $color-hover){
-    background-color: $bg;
-    color: $color;
-    cursor: pointer;
-    padding: 12px 50px;
-    border-radius: 60px;
-    border: $border-width solid $orange-100;
-    transition: all 0.5s;
-    box-shadow: $shadow;
-    font-family:"Audiowide", sans-serif; ;
-    &:hover{
-        background-color: $bg-hover;
-        color: $color-hover;
-        border-color: $yellow-100;
-    }
+@mixin styleButton(
+  $bg,
+  $color,
+  $border-width,
+  $shadow,
+  $bg-hover,
+  $color-hover
+) {
+  background-color: $bg;
+  color: $color;
+  cursor: pointer;
+  padding: 12px 50px;
+  border-radius: 60px;
+  border: $border-width solid $orange-100;
+  transition: all 0.5s;
+  box-shadow: $shadow;
+  font-family: "Audiowide", sans-serif;
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+    border-color: $yellow-100;
+  }
 }
 
-@mixin styleText($fs, $fw, $color, $transform:none){
-    font-size: $fs;
-    font-weight: $fw;
-    color: $color;
-    text-transform: $transform;
+@mixin styleText($fs, $fw, $color, $transform: none) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+  text-transform: $transform;
 }
 
-@mixin styleInput ($pd, $fs, $bg,$bd,$bdr){
-    padding: $pd;
-    font-size: $fs;
-    line-height: 26px;
-    background-color: $bg;
-    border: $bd;
-    border-radius: $bdr;
-    transition: all .5s;
-        &::placeholder{
-        color:$grey-300;
-        font-size: $text-base;
-        line-height: inherit;
-        margin: 0;
-        padding: 0;
-       }
-       &:focus{
-        box-shadow: none;
-        outline: none;
-        padding: 10px 10px;
-       }
+@mixin styleInput($pd, $fs, $bg, $bd, $bdr) {
+  padding: $pd;
+  font-size: $fs;
+  line-height: 26px;
+  background-color: $bg;
+  border: $bd;
+  border-radius: $bdr;
+  transition: all 0.5s;
+  &::placeholder {
+    color: $grey-300;
+    font-size: $text-base;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    padding: 10px 10px;
+  }
 }

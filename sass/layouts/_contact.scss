@@ -1,0 +1,108 @@
+.banner {
+  background-image: url("../../image/img086.png");
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $color;
+    opacity: 0.38;
+  }
+  .banner_content {
+    a,
+    i,
+    span {
+      font-size: $text-lg;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    a {
+      transition: all 0.5s;
+      color: black;
+      &:hover {
+        color: $yellow-100;
+      }
+    }
+    i {
+      font-size: $text-tiny;
+      font-weight: light;
+    }
+  }
+}
+
+.cta {
+  .cta_form {
+    padding: 0 10px;
+    input[type="text"],
+    input[type="email"] {
+      @include styleInput(
+        10px 30px,
+        $text-base,
+        $color,
+        1px solid $grey-200,
+        50px
+      );
+    }
+    textarea {
+      @include styleInput(
+        10px 30px,
+        $text-base,
+        $color,
+        1px solid $grey-200,
+        30px
+      );
+    }
+  }
+  .cta_img {
+    padding: 0 10px;
+    img {
+      width: 100%;
+      max-width: 700px;
+      max-height: 562px;
+    }
+  }
+}
+
+.info {
+  .col-xl-4 {
+    padding: 0 20px;
+  }
+  .bg-orange {
+    background-color: $orange-100;
+    padding: 50px;
+
+    .info_item {
+      margin-bottom: 20px;
+      i {
+        font-size: $text-3xl;
+        color: white;
+        margin-right: 30px;
+      }
+      p,
+      a {
+        font-size: $text-base;
+        color: white;
+        transition: all 0.5s;
+      }
+      a {
+        &:hover {
+          color: $yellow-100;
+        }
+      }
+    }
+  }
+}
+.ShoeMap {
+  .col-xl-12 {
+    padding: 0 20px;
+  }
+}
