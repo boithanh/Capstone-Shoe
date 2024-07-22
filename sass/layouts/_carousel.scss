@@ -1,0 +1,67 @@
+.carousel{
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-inner{
+        cursor: grab;
+        .carousel-item{
+            img{
+                display: block;
+                width: 100%;
+                
+            }
+            .carousel-caption{
+                margin-top: 75px;
+                top: 0;
+                left: 0;
+                
+                padding: 55px 35px;
+                text-align: left;
+                .baner_title{
+                    font-size: 20px;
+                    color: $black-100;
+                }
+                h2{
+                    font-size: $text-title;
+                    font-weight: $fw;
+                    color: $black-100;
+                    margin-top: 10px;
+                    font-family: $font-family;
+                    line-height: 1.5;
+                    span{
+                        color: $orange-100;
+                    }  
+                }
+                .baner_text{
+                    margin: 20px 0;
+                    color: $black-100;
+                    font-size: 20px;
+                    color: $black-100;
+
+                }
+                .baner_button{
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    border-radius: 40px;
+                    background-color: $orange-100;
+                    padding: 1rem 3rem;
+                    transition: all 0.5s;
+                    margin-top: 20px;
+                    a{
+                    font-family: $font-family;
+                    color: $color;
+                    font-size: 20px;
+                    }
+                    &:hover{
+                        background-color: $yellow-100;
+                        a{
+                            color: $black-100;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
