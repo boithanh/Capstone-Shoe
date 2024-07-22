@@ -11,7 +11,20 @@ $text-sm: 14px;
 $text-base: 16px;
 $text-lg: 18px;
 $text-xl:20px;
+$text-1xl:22px;
 $text-2xl:24px;
 $text-3xl:28px;
 $text-4xl:35px;
+$text-5xl:45px;
+// FONT WEIGTH
+$fw: 400px;
+
+// FONT FAMILY
+$font-family:"Audiowide", sans-serif;
+
+// Hiển thị trên thiết bị người dùng
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1248px;
 

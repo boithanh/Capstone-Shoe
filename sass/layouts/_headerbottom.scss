@@ -1,4 +1,9 @@
 header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     font-family: "Outfit", sans-serif;
     font-size: $text-base;
     font-weight: bold;
@@ -26,6 +31,7 @@ header{
                     padding: 0 30px;
                 a{
                     color: $color;
+                    transition: all 0.5s;
 
                     &:hover{
                         color: $yellow-100;
@@ -61,4 +67,17 @@ header{
             }
         }
     }
+}
+@media screen and (max-width: $breakpoint-lg){
+    .header{
+        .navbar{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-xl) {
+    
 }

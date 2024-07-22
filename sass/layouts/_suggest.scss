@@ -1,0 +1,107 @@
+.suggest_shoe{
+    padding: 60px 40px 0;
+    .suggest_top{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        color: $black-100;
+        .suggest_title{
+            h3{
+            font-family: $font-family;
+            font-weight: $fw;
+            font-size: $text-5xl;
+            text-transform: capitalize;
+            color: $black-100;
+            }
+        }
+        .suggest_navbar{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            cursor: pointer;
+            .navbar_link{
+                font-family: $font-family;
+                font-weight: $fw;
+                font-size: $text-2xl;
+                color: $black-100;
+                text-transform: capitalize;
+                padding: 0.8rem 2.5rem;
+                border: 1px solid $orange-100;
+                font-weight: $fw;
+                border-radius: 30px;
+                transition: all 0.5s;
+                &:hover{
+                    border: 1px solid $yellow-100;
+                    color: $orange-100;
+                }
+            }
+            .active{
+                color: $orange-100;
+                border: 1px solid $yellow-100;
+            }
+        }
+    }
+    .suggest_bottom{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 10px;
+        .suggest_product{
+           .suggest_item{
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            transition: all 0.5s;
+            &:hover{
+                .suggest_icon {
+                    bottom: 0;
+                }
+            }
+            .suggest_img{
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                img{
+                    width: 100%;
+                    border-radius: 8px 8px 0 0;
+                }
+            }
+            .suggest_icon{
+                position: absolute;
+                bottom: -227px;
+                margin: 0;
+                background: rgb(8 8 8 / 0);
+                padding: 20px 0;
+                width: 100%;
+                text-align: center;
+                transition: all 0.5s;
+                .suggest_icon_design{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    line-height: 40px;
+                    background: $orange-100;
+                    display: inline-block;
+                    margin-left: 10px;
+                    .fa-cart-shopping{
+                        color: $color;
+                    }
+                }
+            }
+            .suggest_text{
+                padding: 20px;
+                text-transform: capitalize;
+                .suggest_text_name{  
+                    color: $black-100;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $yellow-100;
+                    }
+                }
+            }
+           } 
+        }
+    }
+}
