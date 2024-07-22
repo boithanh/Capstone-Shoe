@@ -1,13 +1,11 @@
 // Kiểu dáng của button: màu nền, màu chữ, padding
 // border, border-radius, font-size, hover
-@mixin styleButton(
-  $bg,
+@mixin styleButton($bg,
   $color,
   $border-width,
   $shadow,
   $bg-hover,
-  $color-hover
-) {
+  $color-hover) {
   background-color: $bg;
   color: $color;
   cursor: pointer;
@@ -17,6 +15,7 @@
   transition: all 0.5s;
   box-shadow: $shadow;
   font-family: "Audiowide", sans-serif;
+
   &:hover {
     background-color: $bg-hover;
     color: $color-hover;
@@ -39,6 +38,7 @@
   border: $bd;
   border-radius: $bdr;
   transition: all 0.5s;
+
   &::placeholder {
     color: $grey-300;
     font-size: $text-base;
@@ -46,6 +46,7 @@
     margin: 0;
     padding: 0;
   }
+
   &:focus {
     box-shadow: none;
     outline: none;
