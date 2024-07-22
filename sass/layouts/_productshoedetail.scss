@@ -1,0 +1,227 @@
+.product_shoe{
+    padding: 100px 40px 45px;
+    .product_title{
+        text-align: left;
+        color: $black-100;
+        line-height: 50px;
+        .titleproduct{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: $text-4xl;
+            text-transform: capitalize;
+        }
+    }
+    .product_content{
+        .swiper-container{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    cursor: pointer;
+                    .swiper-slide-img{
+                        height: 70%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.5s;
+                            &:hover{
+                                transform: scale(1.02);
+                            }
+                        }
+                    }
+                    .swiper-slide-text{
+                        padding: 30px;
+                        height: 30%;
+                        .swiper_title{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 10px;
+                            cursor: pointer;
+                            h5{
+                                font-family: $font-family;
+                                font-weight: 400;
+                                font-size: $text-xl;
+                                text-transform: capitalize;
+                                color: $black-100;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: $yellow-100;
+                                }
+                            }
+                            a{
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                line-height: 60px;
+                                background-color: $orange-100;
+                                text-align: center;
+                                &:hover{
+                                    background-color: $yellow-100;
+                                    .fa-cart-shopping{
+                                        color: $black-100;
+                                    }
+                                }
+                                .fa-cart-shopping{
+                                    color: $color;
+                                    font-size: $text-xl;
+                                }
+                            }
+                        }
+                        .star{
+                            .fa-star{
+                                color: $yellow-100;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .product_shoe {
+        padding: 80px 30px 35px;
+
+        .product_title {
+            .titleproduct {
+                font-size: $text-3xl;
+            }
+        }
+
+        .product_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 20px;
+
+                            .swiper_title {
+                                h5 {
+                                    font-size: $text-lg;
+                                }
+
+                                a {
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-lg;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For devices with width <= 768px */
+@media (max-width: 768px) {
+    .product_shoe {
+        padding: 60px 20px 25px;
+
+        .product_title {
+            .titleproduct {
+                font-size: $text-2xl;
+            }
+        }
+
+        .product_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 15px;
+
+                            .swiper_title {
+                                gap: 5px;
+                                h5 {
+                                    font-size: $text-base;
+                                }
+
+                                a {
+                                    width: 45px;
+                                    height: 45px;
+                                    line-height: 45px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-base;
+                                    }
+                                }
+                            }
+                            .star{
+                                .fa-star{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For devices with width <= 576px */
+@media (max-width: 576px) {
+    .product_shoe {
+        padding: 40px 10px 15px;
+
+        .product_title {
+            .titleproduct {
+                font-size: $text-xl;
+            }
+        }
+
+        .product_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 10px;
+
+                            .swiper_title {
+                                gap: 5px;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h5 {
+                                    font-size: $text-sm;
+                                    text-align: center;
+                                }
+
+                                a {
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    margin-top: 10px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-sm;
+                                    }
+                                }
+                            }
+                            .star{
+                                .fa-star{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

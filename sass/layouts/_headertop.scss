@@ -60,4 +60,47 @@
         
     }
 };
+.header--top {
+    display: none;
+  
+    @media (min-width: $breakpoint-sm) {
+      display: block;
+    }
+  
+    @media (min-width: $breakpoint-md) {
+    
+    }
+  
+    @media (min-width: $breakpoint-lg) {
+      
+    }
+  
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+  
+      .header--left,
+      .header--right {
+        ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+  
+          li {
+            margin-right: 10px;
+  
+            a {
+              text-decoration: none;
+  
+              i {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
