@@ -1,4 +1,5 @@
 
+// COLOR
 $blue-100:#4A6D97;
 $black-100:#191919;
 $yellow-100:#FBBF18;
@@ -14,4 +15,12 @@ $text-xl:20px;
 $text-2xl:24px;
 $text-3xl:28px;
 $text-4xl:35px;
+$text-5xl:40px;
+// FONT FAMILY
+$font-family: "Audiowide", sans-serif;
 
+// @MEDIA 
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 990px;
+$breakpoint-xl: 1248px;
