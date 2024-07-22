@@ -1,0 +1,45 @@
+$arrHeading: (
+  $text-title,
+  $text-5xl,
+  $text-4xl,
+  $text-3xl,
+  $text-2xl,
+  $text-xl
+);
+$index: 1;
+
+@each $value in $arrHeading {
+  h#{$index} {
+    font-family: "Audiowide", sans-serif;
+    font-size: $value;
+  }
+  $index: $index + 1;
+}
+
+.btn-orange {
+  @include styleButton($orange-100, $color, 1px, none, $yellow-100, black);
+}
+
+.pd-60 {
+  padding: $pd-60 0;
+}
+
+.pt-60 {
+  padding: $pd-60 0 0 0;
+}
+
+.pb-60 {
+  padding: 0 0 $pd-60 0;
+}
+
+.pd-100 {
+  padding: $pd-100 0;
+}
+
+.pt-100 {
+  padding: $pd-100 0 0 0;
+}
+
+.pb-100 {
+  padding: 0 0 $pd-100 0;
+}

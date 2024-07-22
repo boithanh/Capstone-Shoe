@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shoe CapstoneJS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="../../image/icon.png" type="image/x-icon" />
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- CSS MAIN  -->
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <section class="header--top container-fluid d-sm-block d-none">
+    <div class="content">
+      <div class="header--left">
+        <ul class="mb-0">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header--right">
+        <ul class="mb-0">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="../auth/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <header class="mainHeader">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../../image/logo.svg" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                  <li><a class="dropdown-item" href="#">Women's Wear</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Performance Shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Casual Shoes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="headerSearch" role="search">
+              <input class="form-control input_search" type="search" placeholder="Enter Keyword" aria-label="Search" />
+              <button class="btn btnSearch" type="submit" title="searchButton">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Body  -->
+
+  <!-- Banner section -->
+  <section class="banner">
+    <div class="container-fluid position-relative">
+      <div class="row">
+        <div class="banner_content">
+          <h2>Contact</h2>
+          <a href="../../index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA section -->
+  <section class="cta pd-60">
+    <div class="container-fluid custom-fluid">
+      <div class="row d-flex align-items-center justify-content-between">
+        <div class="col-xl-6">
+          <div class="cta_form">
+            <h2 class="mb-5">Contact Us</h2>
+            <form id="frmContact">
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-sm mb-4" name="" id="txtName"
+                  aria-describedby="helpId" placeholder="Name" />
+                <input type="email" class="form-control form-control-sm mb-4" name="" id="txtEmail"
+                  aria-describedby="helpId" placeholder="Email" />
+                <textarea class="form-control mb-4" name="" id="txtComment" rows="6" placeholder="Comment"></textarea>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="" checked />
+                  <label class="form-check-label" for="">
+                    Save my name, email, and website in this browser.
+                  </label>
+                </div>
+              </div>
+              <div class="btnGroup">
+                <button type="submit" class="btn-orange">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="cta_img">
+            <img src="../../image/img" alt="err" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Info section -->
+  <section class="info pb-60">
+    <div class="container-fluid custom-fluid">
+      <div class="row justify-content-center text-center pb-4">
+        <div class="col-xl-8">
+          <div class="info_title">
+            <h2 class="mb-3">Our Branches At</h2>
+            <p>
+              Cras Dictum Odio Sed Aliquam Eleifend. Lorem Ipsum Dolor Sit
+              Amet, Consecte Adipiscing Elit. Etiam Lorem Lectus Pellentesque
+              Lacinia Sollicitudin Luctus Phas Pretium Porta Odio A Porta.
+              Cras Fringilla Iaculis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-xl-4">
+          <div class="bg-orange">
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">info@example.com</a>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">000 - 123 - 456789</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="bg-orange">
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">info@example.com</a>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">000 - 123 - 456789</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="bg-orange">
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">info@example.com</a>
+            </div>
+            <div class="info_item d-flex align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">000 - 123 - 456789</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ShoeMap pb-100">
+    <div class="container-fluid custom-fluid">
+      <div class="row">
+        <div class="col-xl-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501725.41844069224!2d106.36556197528812!3d10.755292865572985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1720589261199!5m2!1svi!2s"
+            width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+  <footer>
+    <div class="footer--sub">
+      <div class="container-fluid">
+        <div class="footer--text row">
+          <div class="footer_item1 col-lg-4 col-sm-6">
+            <div class="archives list-before-icon">
+              <img src="../../image/logo.svg" alt="footer_logo" />
+              <p>
+                1245, North Western Street<br />
+                Europia. Lumbio
+              </p>
+              <p>
+                Monday to Friday from 09:00 to 17:00.<br />
+                Call Us+31 (0) 123 456 789
+              </p>
+            </div>
+          </div>
+
+          <div class="footer_item2 col-lg-2 col-sm-6">
+            <div class="categories list-before-icon">
+              <h6>Shop</h6>
+              <ul class="ps-0">
+                <li>
+                  <a href="#">Sneakers</a>
+                </li>
+                <li>
+                  <a href="#">Moccasin</a>
+                </li>
+                <li>
+                  <a href="#">Hiking boot</a>
+                </li>
+                <li>
+                  <a href="#">Oxford shoe</a>
+                </li>
+                <li>
+                  <a href="#">Wellington boot</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_item2 col-lg-2 col-sm-6">
+            <div class="contact href1--footer">
+              <h6>Customer</h6>
+              <ul class="ps-0">
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Sign In</a>
+                </li>
+                <li>
+                  <a href="#">Create Account</a>
+                </li>
+                <li>
+                  <a href="#">Shopping</a>
+                </li>
+                <li>
+                  <a href="#">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_item3 col-lg-4 col-sm-6">
+            <div class="about ps-lg-5">
+              <h6>
+                Sign up to be the first to<br />
+                know about new<br />collections.
+              </h6>
+              <div class="form-email d-flex">
+                <form class="form-input-email">
+                  <input type="email" name="Email" id="email" placeholder="Enter your email" class="form-control" />
+                </form>
+                <button type="submit" class="btnEmail" title="submitButton">
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </div>
+              <div class="socail-icon">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="copyright text-center">
+      <div class="container-fluid">
+        <p>All Right Reserved © 2023 Designthemes</p>
+      </div>
+    </section>
+  </footer>
+  <!-- back to top js cody house  -->
+  <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- back to top cody house js  -->
+  <script src="../../vendor/back-to-top-master/assets/js/util.js"></script>
+  <script src="../../vendor/back-to-top-master/assets/js/main.js"></script>
+</body>
+
+</html>

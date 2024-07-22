@@ -1,1341 +1,1334 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Shoe CapstoneJS</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
-    <!-- Google Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Shoe CapstoneJS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="image/icon.png" type="image/x-icon" />
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- (Optional) Use CSS or JS implementation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- (Optional) Use CSS or JS implementation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- SWIPER CSS  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- SWIPER CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- CSS MAIN  -->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS MAIN  -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <!-- HEADER -->
-    <section class="header--top container-fluid d-sm-block d-none">
-        <div class="content">
-            <div class="header--left">
-                <ul class="mb-0">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
+  <!-- HEADER -->
+  <section class="header--top container-fluid d-sm-block d-none">
+    <div class="content">
+      <div class="header--left">
+        <ul class="mb-0">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
 
-            <div class="header--right">
-                <ul class="mb-0">
-                    <li>
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
-                        <a href="#">Register</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <header class="mainHeader">
+      <div class="header--right">
+        <ul class="mb-0">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <header class="mainHeader">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt="logo" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav d-flex mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
-                                    <li><a class="dropdown-item" href="#">Women's Wear</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Performance Shoes</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Casual Shoes</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                        </ul>
-                        <form class="headerSearch" role="search">
-                            <input class="form-control input_search" type="search" placeholder="Enter Keyword"
-                                aria-label="Search" />
-                            <button class="btn btnSearch" type="submit" title="searchButton">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
+          <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                  <li><a class="dropdown-item" href="#">Women's Wear</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Performance Shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Casual Shoes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="headerSearch" role="search">
+              <input class="form-control input_search" type="search" placeholder="Enter Keyword" aria-label="Search" />
+              <button class="btn btnSearch" type="submit" title="searchButton">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
         </div>
-    </header>
-    <!-- BODY  -->
-    <!-- CAROUSEL -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators flex-column align-items-end">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item position-relative active">
-                <img src="./image/baner.png" alt="baner" />
-                <div class="carousel-caption">
-                    <p class="baner_title">Sneakers 2024 Limited Edition</p>
-                    <h2>FOR <span>JOURNEY </span> WITH<br>YOUR HAPPY FEET</h2>
-                    <div class="baner_text">
-                        <span>Quis varius quam quisque id diam. Tellus mauris a diam maecenas sed enim ut sem
-                            viverra.<br>Massa enim nec dui nunc mattis.</span>
-                    </div>
-                    <div class="baner_button">
-                        <a href="#" class="button">Shop Special Edition</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./image/baner2.jpg" alt="..." />
-                <div class="overlay position-absolute"></div>
-                <div class="carousel-caption">
-                    <p class="baner_title">Sneakers For All</p>
-                    <h2>WALK <span>THE TALK</span> WITH<br>OUR SHOES</h2>
-                    <div class="baner_text">
-                        <span>Mus mauris vitae ultricies leo. Massa enim nec dui nunc mattis enim ut tellus
-                            elementum.</span>
-                    </div>
-                    <div class="baner_button">
-                        <a href="#" class="button">Shop Special Edition</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./image/baner1.jpg" alt="..." />
-                <div class="overlay position-absolute"></div>
-                <div class="carousel-caption">
-                    <p class="baner_title">Curated Sneakers</p>
-                    <h2>PUT YOUR<span>BEST FOOT<br>FORWARD</span>WITH US</h2>
-                    <div class="baner_text">
-                        <span>Mus mauris vitae ultricies leo. Massa enim nec dui nunc mattis enim ut tellus
-                            elementum.</span>
-                    </div>
-                    <div class="baner_button">
-                        <a href="#" class="button">Shop Special Edition</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </nav>
     </div>
-    <!-- PRODUCT  -->
-    <div class="product">
-        <div class="product_title">
-            <h2 class="title">our product category</h2>
-            <p class="description">Orem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor<br>
-                Incididunt Ut Labore Et Dolore Magna Aliqua. </p>
-        </div>
-        <div class="product_content">
-            <div class="product_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/product1.png" alt="product_img">
-                    </a>
-                </div>
-                <div class="imgtext_overlay">
-                    <a href="#">
-                        <h3>Formal</h3>
-                    </a>
-                </div>
-
-            </div>
-            <div class="product_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/product2.png" alt="product_img">
-                    </a>
-                </div>
-                <div class="imgtext_overlay">
-                    <a href="#">
-                        <h3>Boots</h3>
-                    </a>
-                </div>
-
-            </div>
-            <div class="product_imgcenter img_center">
-                <div class="imgcenter">
-                    <a href="#">
-                        <img src="./image/product3.png" alt="product_img">
-                    </a>
-                </div>
-                <div class="imgtext_overlay">
-                    <a href="#">
-                        <h3>Sneakers</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="product_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/product4.png" alt="product_img">
-                    </a>
-                </div>
-                <div class="imgtext_overlay">
-                    <a href="#">
-                        <h3>Loafer</h3>
-                    </a>
-                </div>
-
-            </div>
-            <div class="product_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/product5.png" alt="product_img">
-                    </a>
-                </div>
-                <div class="imgtext_overlay">
-                    <a href="#">
-                        <h3>Sport</h3>
-                    </a>
-                </div>
-
-            </div>
-        </div>
+  </header>
+  <!-- BODY  -->
+  <!-- CAROUSEL -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators flex-column align-items-end">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <!-- PICKS -->
-    <div class="pick_shoe">
-        <div class="pick_title">
-            <h2 class="titlepick">fresh picks for you</h2>
-            <p class="descriptionpick">Habitant Morbi Tristique Senectus Et Netus Et Malesuada. Dolor Sed
-                Viverra<br>Ipsum Nunc Aliquet Bibendum. Magna Ac Placerat Vestibulum Lectus Mauris<br>Ultrices Eros In.
-            </p>
+    <div class="carousel-inner">
+      <div class="carousel-item position-relative active">
+        <img src="./image/baner.png" alt="baner" />
+        <div class="carousel-caption">
+          <p class="baner_title">Sneakers 2024 Limited Edition</p>
+          <h2>FOR <span>JOURNEY </span> WITH<br>YOUR HAPPY FEET</h2>
+          <div class="baner_text">
+            <span>Quis varius quam quisque id diam. Tellus mauris a diam maecenas sed enim ut sem
+              viverra.<br>Massa enim nec dui nunc mattis.</span>
+          </div>
+          <div class="baner_button">
+            <a href="#" class="button">Shop Special Edition</a>
+          </div>
         </div>
-        <div class="pick_link">
-            <div class="picktext_link active">shop all</div>
-            <div class="picktext_link">men</div>
-            <div class="picktext_link">womens</div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/baner2.jpg" alt="..." />
+        <div class="overlay position-absolute"></div>
+        <div class="carousel-caption">
+          <p class="baner_title">Sneakers For All</p>
+          <h2>WALK <span>THE TALK</span> WITH<br>OUR SHOES</h2>
+          <div class="baner_text">
+            <span>Mus mauris vitae ultricies leo. Massa enim nec dui nunc mattis enim ut tellus
+              elementum.</span>
+          </div>
+          <div class="baner_button">
+            <a href="#" class="button">Shop Special Edition</a>
+          </div>
         </div>
-        <div class="pick_content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img018.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img030.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img040.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img050.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img060.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img070.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img080.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img035.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img045.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                            <div class="star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/baner1.jpg" alt="..." />
+        <div class="overlay position-absolute"></div>
+        <div class="carousel-caption">
+          <p class="baner_title">Curated Sneakers</p>
+          <h2>PUT YOUR<span>BEST FOOT<br>FORWARD</span>WITH US</h2>
+          <div class="baner_text">
+            <span>Mus mauris vitae ultricies leo. Massa enim nec dui nunc mattis enim ut tellus
+              elementum.</span>
+          </div>
+          <div class="baner_button">
+            <a href="#" class="button">Shop Special Edition</a>
+          </div>
         </div>
-        <div class="pick_button">
-            <a href="#" class="button">VIEW ALL PRODUCTS</a>
-        </div>
+      </div>
     </div>
-    <!-- DEALS  -->
-    <div class="deal_shoe">
-        <div class="deal_title">
-            <h2 class="titledeal">today's featured deals</h2>
+  </div>
+  <!-- PRODUCT  -->
+  <div class="product">
+    <div class="product_title">
+      <h2 class="title">our product category</h2>
+      <p class="description">Orem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor<br>
+        Incididunt Ut Labore Et Dolore Magna Aliqua. </p>
+    </div>
+    <div class="product_content">
+      <div class="product_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/product1.png" alt="product_img">
+          </a>
         </div>
-        <div class="deal_link">
-            <div class="dealtext_link active">New Arrivals</div>
-            <img src="./image/logo.svg" alt="logo_deal">
-            <div class="dealtext_link">Best Sellers</div>
+        <div class="imgtext_overlay">
+          <a href="#">
+            <h3>Formal</h3>
+          </a>
         </div>
-        <div class="deal_content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img018.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img030.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img040.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img050.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img060.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img070.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img080.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img035.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/img045.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>sunlight men jogger sneakers</h5>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                            <p>Rs. 53.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+
+      </div>
+      <div class="product_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/product2.png" alt="product_img">
+          </a>
+        </div>
+        <div class="imgtext_overlay">
+          <a href="#">
+            <h3>Boots</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="product_imgcenter img_center">
+        <div class="imgcenter">
+          <a href="#">
+            <img src="./image/product3.png" alt="product_img">
+          </a>
+        </div>
+        <div class="imgtext_overlay">
+          <a href="#">
+            <h3>Sneakers</h3>
+          </a>
+        </div>
+      </div>
+      <div class="product_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/product4.png" alt="product_img">
+          </a>
+        </div>
+        <div class="imgtext_overlay">
+          <a href="#">
+            <h3>Loafer</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="product_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/product5.png" alt="product_img">
+          </a>
+        </div>
+        <div class="imgtext_overlay">
+          <a href="#">
+            <h3>Sport</h3>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- PICKS -->
+  <div class="pick_shoe">
+    <div class="pick_title">
+      <h2 class="titlepick">fresh picks for you</h2>
+      <p class="descriptionpick">Habitant Morbi Tristique Senectus Et Netus Et Malesuada. Dolor Sed
+        Viverra<br>Ipsum Nunc Aliquet Bibendum. Magna Ac Placerat Vestibulum Lectus Mauris<br>Ultrices Eros In.
+      </p>
+    </div>
+    <div class="pick_link">
+      <div class="picktext_link active">shop all</div>
+      <div class="picktext_link">men</div>
+      <div class="picktext_link">womens</div>
+    </div>
+    <div class="pick_content">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img018.jpg" alt="">
             </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img030.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img040.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img050.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img060.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img070.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img080.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img035.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img045.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <div class="deal_button">
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="pick_button">
+      <a href="#" class="button">VIEW ALL PRODUCTS</a>
+    </div>
+  </div>
+  <!-- DEALS  -->
+  <div class="deal_shoe">
+    <div class="deal_title">
+      <h2 class="titledeal">today's featured deals</h2>
+    </div>
+    <div class="deal_link">
+      <div class="dealtext_link active">New Arrivals</div>
+      <img src="./image/logo.svg" alt="logo_deal">
+      <div class="dealtext_link">Best Sellers</div>
+    </div>
+    <div class="deal_content">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img018.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img030.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img040.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img050.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img060.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img070.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img080.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img035.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/img045.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>sunlight men jogger sneakers</h5>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <p>Rs. 53.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- <div class="deal_button">
             <a href="#" class="button">VIEW ALL PRODUCTS</a>
         </div> -->
+  </div>
+  <!-- BRANDS  -->
+  <div class="brand_shoe">
+    <div class="brand_title">
+      <h2 class="titlebrand">most popular brands</h2>
+      <p class="descriptionbrand">Sagittis Vitae Et Leo Duis Ut Diam Quam Nulla. In Eu Mi Bibendum Neque
+        Egestas<br>
+        Congue Quisque.Fringilla Phasellus Faucibus Scelerisque Eleifend Donec Pretium<br>Vulputate Sapien.
+      </p>
     </div>
-    <!-- BRANDS  -->
-    <div class="brand_shoe">
-        <div class="brand_title">
-            <h2 class="titlebrand">most popular brands</h2>
-            <p class="descriptionbrand">Sagittis Vitae Et Leo Duis Ut Diam Quam Nulla. In Eu Mi Bibendum Neque
-                Egestas<br>
-                Congue Quisque.Fringilla Phasellus Faucibus Scelerisque Eleifend Donec Pretium<br>Vulputate Sapien.
-            </p>
+    <div class="brand_content">
+      <div class="brand_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/brandChampion.png" alt="brand_img">
+          </a>
         </div>
-        <div class="brand_content">
-            <div class="brand_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/brandChampion.png" alt="brand_img">
-                    </a>
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <img src="./image/iconChampion.png" alt="icon_brand">
-                    </a>
-                </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <img src="./image/iconChampion.png" alt="icon_brand">
+          </a>
+        </div>
 
-            </div>
-            <div class="brand_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/brandFila.png" alt="brand_img">
-                    </a>
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <img src="./image/iconFila.png" alt="icon_brand">
-                    </a>
-                </div>
+      </div>
+      <div class="brand_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/brandFila.png" alt="brand_img">
+          </a>
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <img src="./image/iconFila.png" alt="icon_brand">
+          </a>
+        </div>
 
-            </div>
-            <div class="brand_imgcenter img_center">
-                <div class="imgcenter">
-                    <a href="#">
-                        <img src="./image/brandPuma.png" alt="brand_img">
-                    </a>
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <img src="./image/iconPuma.png" alt="icon_brand">
-                    </a>
-                </div>
-            </div>
-            <div class="brand_img">
-                <div class="imgItem">
-                    <a href="#">
-                        <img src="./image/brandReebok.png" alt="brand_img">
-                    </a>
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <img src="./image/iconReebok.png" alt="icon_brand">
-                    </a>
-                </div>
-            </div>
+      </div>
+      <div class="brand_imgcenter img_center">
+        <div class="imgcenter">
+          <a href="#">
+            <img src="./image/brandPuma.png" alt="brand_img">
+          </a>
         </div>
-        <div class="banner_sale">
-            <img class="banner_img" src="./image/banerSale.png" alt="banner_sale">
+        <div class="icon_overlay">
+          <a href="#">
+            <img src="./image/iconPuma.png" alt="icon_brand">
+          </a>
         </div>
+      </div>
+      <div class="brand_img">
+        <div class="imgItem">
+          <a href="#">
+            <img src="./image/brandReebok.png" alt="brand_img">
+          </a>
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <img src="./image/iconReebok.png" alt="icon_brand">
+          </a>
+        </div>
+      </div>
     </div>
-    <!-- SUGGESTED  -->
-    <div class="suggest_shoe">
-        <div class="suggest_top">
-            <div class="suggest_title">
-                <h3>suggest for you</h3>
-            </div>
-            <div class="suggest_navbar">
-                <div class="navbar_link  active" id="nav_allShoe">all shoe</div>
-                <div class="navbar_link" id="nav_casuals">casuals</div>
-                <div class="navbar_link" id="nav_sports">sports</div>
-                <div class="navbar_link" id="nav_sneakers">sneakers</div>
-                <div class="navbar_link" id="nav_boots">boots</div>
-            </div>
-        </div>
-        <div class="suggest_bottom">
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img021.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img031.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img041.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img051.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img022.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img026.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img028.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img040.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img040.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="suggest_product">
-                <div class="suggest_item">
-                    <div class="suggest_img">
-                        <a href="#url">
-                            <img src="./image/img040.jpg" alt="img_suggest">
-                            <div class="suggest_icon">
-                                <div class="suggest_icon_box">
-                                    <a href="#" class="suggest_icon_design">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="suggest_text">
-                        <a href="#">
-                            <h5 class="suggest_text_name">
-                                Sunlight Jogger Sneakers
-                            </h5>
-                        </a>
-                        <span>Rs. 53.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="banner_sale">
+      <img class="banner_img" src="./image/banerSale.png" alt="banner_sale">
     </div>
-    <!-- Frequently Asked Questions  -->
-    <div class="question_shoe">
-        <div class="question_left">
-            <div class="question_title">
-                <h3>Frequently Asked Questions</h3>
-            </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What sizes do you offer?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>Feugiat sed lectus vestibulum mattis. Dui vivamus arcu felis bibendum. Aliquam
-                                faucibus tempor. Massa eget egestas purus viverra accumsan in.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            What is your return policy?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Ultrices mi
-                                tempus imperdiet nulla malesuada. Vitae nunc sed velit dignissim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            How can I track my order?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
-                                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingfour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapsefour" aria-expanded="false"
-                            aria-controls="flush-collapsefour">
-                            Are your shoes made from sustainable materials?
-                        </button>
-                    </h2>
-                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
-                                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingfive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapsefive" aria-expanded="false"
-                            aria-controls="flush-collapsefive">
-                            How do I care for my shoes?
-                        </button>
-                    </h2>
-                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
-                                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="question_right">
-            <div class="question_img">
-                <img class="img_queston" src="./image/questions.png" alt="img_queston">
-                <img class="icon_question" src="./image/icon_question.png" alt="icon_question">
-                <!-- <div class="ripple-container"></div> -->
-            </div>
-        </div>
+  </div>
+  <!-- SUGGESTED  -->
+  <div class="suggest_shoe">
+    <div class="suggest_top">
+      <div class="suggest_title">
+        <h3>suggest for you</h3>
+      </div>
+      <div class="suggest_navbar">
+        <div class="navbar_link  active" id="nav_allShoe">all shoe</div>
+        <div class="navbar_link" id="nav_casuals">casuals</div>
+        <div class="navbar_link" id="nav_sports">sports</div>
+        <div class="navbar_link" id="nav_sneakers">sneakers</div>
+        <div class="navbar_link" id="nav_boots">boots</div>
+      </div>
     </div>
-    <!-- NEWS  -->
-    <div class="news_shoe">
-        <div class="news_title">
-            <div class="title">
-                <h3>Latest News</h3>
-            </div>
-            <div class="title_text">
-                <p>Ut Venenatis Tellus In Metus Vulputate Eu Scelerisque Felis Imperdiet. Quis Varius Quam Quisque
-                    Id<br>Diam. Tellus Mauris A Diam Maecenas Sed Enim Ut Sem Viverra. Sociis Natoque Penatibus Et
-                    Magnis Dis<br>Parturient Montes Nascetur. In Vitae Turpis Mas.
-                </p>
-            </div>
-        </div>
-        <div class="news_content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Apr 2024</h5>
-                            </div>
-                            <p>Mauris augue neque gravida in. Habitasse platea dictumst vestibulum rhoncus est
-                                pellentesque elit ullamcorper dignissim. Iaculis eu non diam phasellus...</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Apr 2024</h5>
-                            </div>
-                            <p>Habitant morbi tristique senectus et netus et malesuada fames ac. Aenean et tortor at
-                                risus viverra adipiscing at in tellus....</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Mar 2024</h5>
-                            </div>
-                            <p>Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Dictum at tempor commodo
-                                ullamcorper. Mi sit amet mauris commodo...</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Apr 2024</h5>
-                            </div>
-                            <p>Mauris augue neque gravida in. Habitasse platea dictumst vestibulum rhoncus est
-                                pellentesque elit ullamcorper dignissim. Iaculis eu non diam phasellus...</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Apr 2024</h5>
-                            </div>
-                            <p>Habitant morbi tristique senectus et netus et malesuada fames ac. Aenean et tortor at
-                                risus viverra adipiscing at in tellus....</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="./image/new3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide-text">
-                            <div class="swiper_title">
-                                <h5>Mar 2024</h5>
-                            </div>
-                            <p>Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Dictum at tempor commodo
-                                ullamcorper. Mi sit amet mauris commodo...</p>
-                        </div>
-                    </div>
-
+    <div class="suggest_bottom">
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img021.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
         </div>
-
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img031.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img041.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img051.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img022.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img026.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img028.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img040.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img040.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="suggest_product">
+        <div class="suggest_item">
+          <div class="suggest_img">
+            <a href="#url">
+              <img src="./image/img040.jpg" alt="img_suggest">
+              <div class="suggest_icon">
+                <div class="suggest_icon_box">
+                  <a href="#" class="suggest_icon_design">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="suggest_text">
+            <a href="#">
+              <h5 class="suggest_text_name">
+                Sunlight Jogger Sneakers
+              </h5>
+            </a>
+            <span>Rs. 53.00</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- SUPPORT  -->
-    <div class="support_shoe">
-        <ul class="support_top">
-            <li class="support_top_item">
-                <i class="fa-solid fa-truck-fast"></i>
-                <span>free shipping</span>
-            </li>
-            <li class="support_top_item">
-
-                <i class="fa-solid fa-credit-card"></i>
-
-                <span>100% Secure Payment</span>
-            </li>
-            <li class="support_top_item">
-
-                <i class="fa-solid fa-headphones-simple"></i>
-                <span>24x7 Customer Service</span>
-            </li>
-            <li class="support_top_item">
-                <i class="fa-solid fa-rotate-left"></i>
-                <span>Free & Easy Returns</span>
-            </li>
-        </ul>
-        <div class="support_bottom">
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup1.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
+  </div>
+  <!-- Frequently Asked Questions  -->
+  <div class="question_shoe">
+    <div class="question_left">
+      <div class="question_title">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What sizes do you offer?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Feugiat sed lectus vestibulum mattis. Dui vivamus arcu felis bibendum. Aliquam
+                faucibus tempor. Massa eget egestas purus viverra accumsan in.</p>
             </div>
-
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup2.jpg" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup3.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup4.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup5.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup6.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="support_item">
-                <div class="support_img">
-                    <img src="./image/sup7.png" alt="img_sub1">
-                </div>
-                <div class="icon_overlay">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What is your return policy?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Ultrices mi
+                tempus imperdiet nulla malesuada. Vitae nunc sed velit dignissim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How can I track my order?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
+                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+              Are your shoes made from sustainable materials?
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
+                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+              How do I care for my shoes?
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Tincidunt augue interdum velit euismod in. Adipiscing diam donec adipiscing tristique
+                risus nec feugiat in. Ut placerat orci nulla dignissim enim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- FOOTER  -->
-    <footer>
-        <div class="footer--sub">
-            <div class="container-fluid">
-                <div class="footer--text row">
-                    <div class="footer_item1 col-lg-4 col-sm-6">
-                        <div class="archives list-before-icon">
-                            <img src="./image/logo.svg" alt="footer_logo">
-                            <p>1245, North Western Street<br>
-                                Europia. Lumbio</p>
-                            <p>Monday to Friday from 09:00 to 17:00.<br>
-                                Call Us+31 (0) 123 456 789</p>
-                        </div>
-                    </div>
-
-                    <div class="footer_item2 col-lg-2 col-sm-6">
-                        <div class="categories list-before-icon">
-                            <h6>Shop</h6>
-                            <ul class="ps-0">
-                                <li>
-                                    <a href="#">Sneakers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Moccasin</a>
-                                </li>
-                                <li>
-                                    <a href="#">Hiking boot</a>
-                                </li>
-                                <li>
-                                    <a href="#">Oxford shoe</a>
-                                </li>
-                                <li>
-                                    <a href="#">Wellington boot</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="footer_item2 col-lg-2 col-sm-6">
-                        <div class="contact href1--footer">
-                            <h6>Customer</h6>
-                            <ul class="ps-0">
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sign In</a>
-                                </li>
-                                <li>
-                                    <a href="#">Create Account</a>
-                                </li>
-                                <li>
-                                    <a href="#">Shopping</a>
-                                </li>
-                                <li>
-                                    <a href="#">Checkout</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="footer_item3 col-lg-4 col-sm-6">
-                        <div class="about ps-lg-5">
-                            <h6>Sign up to be the first to<br> know about new<br>collections.</h6>
-                            <div class="form-email d-flex">
-                                <form class="form-input-email">
-                                    <input type="email" name="Email" id="email" placeholder="Enter your email"
-                                        class="form-control" />
-                                </form>
-                                <button type="submit" class="btnEmail" title="submitButton"><i
-                                        class="fa-regular fa-paper-plane"></i></button>
-                            </div>
-                            <div class="socail-icon">
-                                <ul>
-                                    <li>
-
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-github"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="question_right">
+      <div class="question_img">
+        <img class="img_queston" src="./image/questions.png" alt="img_queston">
+        <img class="icon_question" src="./image/icon_question.png" alt="icon_question">
+        <!-- <div class="ripple-container"></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- NEWS  -->
+  <div class="news_shoe">
+    <div class="news_title">
+      <div class="title">
+        <h3>Latest News</h3>
+      </div>
+      <div class="title_text">
+        <p>Ut Venenatis Tellus In Metus Vulputate Eu Scelerisque Felis Imperdiet. Quis Varius Quam Quisque
+          Id<br>Diam. Tellus Mauris A Diam Maecenas Sed Enim Ut Sem Viverra. Sociis Natoque Penatibus Et
+          Magnis Dis<br>Parturient Montes Nascetur. In Vitae Turpis Mas.
+        </p>
+      </div>
+    </div>
+    <div class="news_content">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new1.jpg" alt="">
             </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Apr 2024</h5>
+              </div>
+              <p>Mauris augue neque gravida in. Habitasse platea dictumst vestibulum rhoncus est
+                pellentesque elit ullamcorper dignissim. Iaculis eu non diam phasellus...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new2.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Apr 2024</h5>
+              </div>
+              <p>Habitant morbi tristique senectus et netus et malesuada fames ac. Aenean et tortor at
+                risus viverra adipiscing at in tellus....</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new3.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Mar 2024</h5>
+              </div>
+              <p>Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Dictum at tempor commodo
+                ullamcorper. Mi sit amet mauris commodo...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new1.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Apr 2024</h5>
+              </div>
+              <p>Mauris augue neque gravida in. Habitasse platea dictumst vestibulum rhoncus est
+                pellentesque elit ullamcorper dignissim. Iaculis eu non diam phasellus...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new2.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Apr 2024</h5>
+              </div>
+              <p>Habitant morbi tristique senectus et netus et malesuada fames ac. Aenean et tortor at
+                risus viverra adipiscing at in tellus....</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-img">
+              <img src="./image/new3.jpg" alt="">
+            </div>
+            <div class="swiper-slide-text">
+              <div class="swiper_title">
+                <h5>Mar 2024</h5>
+              </div>
+              <p>Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Dictum at tempor commodo
+                ullamcorper. Mi sit amet mauris commodo...</p>
+            </div>
+          </div>
+
         </div>
-        <section class="copyright text-center">
-            <div class="container-fluid">
-                <p class="mb-0">
-                    All Right Reserved © 2023 Designthemes
-                </p>
-            </div>
-        </section>
-    </footer>
-    <!-- back to top js cody house  -->
-    <a href="#" class="cd-top text-replace js-cd-top back_to_top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <!-- SWIPER JS  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            autoplay: {
-                delay: 5000, // thời gian giữa các slide, tính bằng ms
-                disableOnInteraction: false, // giữ autoplay ngay cả khi người dùng tương tác
-            },
-            loop: true, // lặp lại các slide
-        });
-    </script>
-    <!-- back to top cody house js  -->
-    <script src="./js/back-to-top-master/assets/js/util.js"></script>
-    <script src="./js/back-to-top-master/assets/js/main.js"></script>
+  </div>
+  <!-- SUPPORT  -->
+  <div class="support_shoe">
+    <ul class="support_top">
+      <li class="support_top_item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>free shipping</span>
+      </li>
+      <li class="support_top_item">
+
+        <i class="fa-solid fa-credit-card"></i>
+
+        <span>100% Secure Payment</span>
+      </li>
+      <li class="support_top_item">
+
+        <i class="fa-solid fa-headphones-simple"></i>
+        <span>24x7 Customer Service</span>
+      </li>
+      <li class="support_top_item">
+        <i class="fa-solid fa-rotate-left"></i>
+        <span>Free & Easy Returns</span>
+      </li>
+    </ul>
+    <div class="support_bottom">
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup1.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup2.jpg" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup3.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup4.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup5.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup6.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="support_item">
+        <div class="support_img">
+          <img src="./image/sup7.png" alt="img_sub1">
+        </div>
+        <div class="icon_overlay">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER  -->
+  <footer>
+    <div class="footer--sub">
+      <div class="container-fluid">
+        <div class="footer--text row">
+          <div class="footer_item1 col-lg-4 col-sm-6">
+            <div class="archives list-before-icon">
+              <img src="./image/logo.svg" alt="footer_logo">
+              <p>1245, North Western Street<br>
+                Europia. Lumbio</p>
+              <p>Monday to Friday from 09:00 to 17:00.<br>
+                Call Us+31 (0) 123 456 789</p>
+            </div>
+          </div>
+
+          <div class="footer_item2 col-lg-2 col-sm-6">
+            <div class="categories list-before-icon">
+              <h6>Shop</h6>
+              <ul class="ps-0">
+                <li>
+                  <a href="#">Sneakers</a>
+                </li>
+                <li>
+                  <a href="#">Moccasin</a>
+                </li>
+                <li>
+                  <a href="#">Hiking boot</a>
+                </li>
+                <li>
+                  <a href="#">Oxford shoe</a>
+                </li>
+                <li>
+                  <a href="#">Wellington boot</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_item2 col-lg-2 col-sm-6">
+            <div class="contact href1--footer">
+              <h6>Customer</h6>
+              <ul class="ps-0">
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Sign In</a>
+                </li>
+                <li>
+                  <a href="#">Create Account</a>
+                </li>
+                <li>
+                  <a href="#">Shopping</a>
+                </li>
+                <li>
+                  <a href="#">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_item3 col-lg-4 col-sm-6">
+            <div class="about ps-lg-5">
+              <h6>Sign up to be the first to<br> know about new<br>collections.</h6>
+              <div class="form-email d-flex">
+                <form class="form-input-email">
+                  <input type="email" name="Email" id="email" placeholder="Enter your email" class="form-control" />
+                </form>
+                <button type="submit" class="btnEmail" title="submitButton"><i
+                    class="fa-regular fa-paper-plane"></i></button>
+              </div>
+              <div class="socail-icon">
+                <ul>
+                  <li>
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="copyright text-center">
+      <div class="container-fluid">
+        <p class="mb-0">
+          All Right Reserved © 2023 Designthemes
+        </p>
+      </div>
+    </section>
+  </footer>
+  <!-- back to top js cody house  -->
+  <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- SWIPER JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 5000, // thời gian giữa các slide, tính bằng ms
+        disableOnInteraction: false, // giữ autoplay ngay cả khi người dùng tương tác
+      },
+      loop: true, // lặp lại các slide
+    });
+  </script>
+  <!-- back to top cody house js  -->
+  <script src="./js/back-to-top-master/assets/js/util.js"></script>
+  <script src="./js/back-to-top-master/assets/js/main.js"></script>
 </body>
 
 </html>

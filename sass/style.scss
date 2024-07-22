@@ -1,6 +1,7 @@
 @import './base/reset';
 @import './helpers/variable';
 @import './helpers/mixin';
+@import'./helpers/util';
 @import './base/custom';
 @import './layouts/headertop';
 @import './layouts/headerbottom';
@@ -15,3 +16,5 @@
 @import './layouts/support';
 @import './layouts/footer';
 @import './layouts/backtotop';
+@import './layouts/register';
+@import './layouts/contact';
