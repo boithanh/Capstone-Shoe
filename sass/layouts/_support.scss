@@ -83,3 +83,59 @@
         }
     }
 }
+
+@media (max-width: 1248px){
+    .support_shoe{
+        .support_top{
+            font-size: $text-xl;
+            .support_top_item{
+                span{
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
+    .support_shoe{
+        .support_top{
+            font-size: $text-base;
+            .support_top_item{
+                span{
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .support_shoe{
+        .support_top{
+            padding: 10px;
+            font-size: $text-base;
+            .support_top_item{
+                
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .support_shoe{
+        .support_top{
+            padding: 10px;
+            font-size: $text-base;
+            .support_top_item{
+                
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

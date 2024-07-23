@@ -38,6 +38,10 @@
                         img{
                             width: 100%;
                             height: 100%;
+                            transition: transform 0.3s ease;
+                            &:hover{
+                                transform: translate(20px, 20px);
+                            }
                         }
                     }
                     .swiper-slide-text{
@@ -92,5 +96,78 @@
     }
     .swiper-pagination{
         display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .news_shoe{
+        padding: 60px 20px 15px;
+        .news_title{
+            padding-right: 0;
+            flex-direction: column;
+            margin-bottom: 0;
+            .title_text{
+                p{
+                    font-size: $text-base;
+                }
+            }
+        }
+        .news_content{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .swiper-slide-text{
+                            padding: 5px;
+                            .swiper_title{
+                                
+                                h5{
+                                    font-size: $text-sm;
+                                }
+                            }
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media (max-width: 576px){
+    .news_shoe{
+        padding: 60px 20px 15px;
+        .news_title{
+            padding-right: 0;
+            flex-direction: column;
+            margin-bottom: 0;
+            .title_text{
+                p{
+                    font-size: $text-base;
+                }
+            }
+        }
+        .news_content{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .swiper-slide-text{
+                            padding: 5px;
+                            .swiper_title{
+                                
+                                h5{
+                                    font-size: $text-sm;
+                                }
+                            }
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

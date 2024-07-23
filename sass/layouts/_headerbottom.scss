@@ -1,83 +1,251 @@
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+header {
     font-family: "Outfit", sans-serif;
     font-size: $text-base;
     font-weight: bold;
     background-color: $black-100;
     padding: 11px;
-    .navbar{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        .navbar-brand{
-            padding: 0 50px;
-            width: 30%;
-        }
-
-        .navbar-collapse{
-            width: 70%;
-            margin-top: 15px;
-            ul{
-                list-style: none;
-                gap: 10px;
-                li{
-                    .dropdown-menu{
-                        background-color: $black-100;
-                    }
-                    padding: 0 30px;
-                a{
-                    color: $color;
-                    transition: all 0.5s;
-
-                    &:hover{
-                        color: $yellow-100;
-                    }
-                    &.active{
-                            color: $yellow-100;   
-                    }
-                }
-                
-                }
-            
+  
+    .navbar {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  
+      .navbar-brand {
+        padding: 0 50px;
+        width: 30%;
+      }
+  
+      .navbar-collapse {
+        width: 70%;
+        margin-top: 15px;
+  
+        ul {
+          list-style: none;
+          gap: 10px;
+  
+          li {
+            padding: 0 30px;
+  
+            .dropdown-menu {
+              background-color: $black-100;
             }
-            .headerSearch{
-                display: flex;
-                .input_search{
-                    position: relative;
-                    margin-left: 2rem;
-                }
-                .btnSearch{
-                    position: absolute;
-                    background-color: $orange-100;
-                    color: $color;
-                    right: 10px;
-                    transition: all 0.5s;
-                    border: 1px solid transparent;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: $yellow-100;
-                        color: $black-100;
-                    }
-                }
-
+  
+            a {
+              color: $color;
+  
+              &:hover {
+                color: $yellow-100;
+              }
+  
+              &.active {
+                color: $yellow-100;
+              }
             }
+          }
         }
-    }
-}
-@media screen and (max-width: $breakpoint-lg){
-    .header{
-        .navbar{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
+  
+        .headerSearch {
+          display: flex;
+  
+          .input_search {
+            position: relative;
+            margin-left: 32px;
+          }
+  
+          .btnSearch {
+            padding: 8px 12px !important;
+            position: absolute;
+            background-color: $orange-100;
+            color: $color;
+            right: 10px;
+            transition: all 0.5s;
+            border: 1px solid transparent;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: $yellow-100;
+              color: $black-100;
+            }
+          }
         }
+      }
     }
-}
-@media screen and (max-width: $breakpoint-xl) {
-    
-}
+  }
+  
+  // Global styles
+  header {
+    .container-fluid {
+      padding: 0;
+    }
+  
+    .navbar {
+      padding: 8px 16px;
+  
+      .navbar-brand img {
+        max-height: 40px;
+      }
+  
+      .navbar-toggler {
+        background-color: #ffffff;
+        border: none;
+  
+        .navbar-toggler-icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+  
+      .navbar-collapse {
+        justify-content: flex-end;
+  
+        .navbar-nav {
+          display: flex;
+          align-items: center;
+  
+          .nav-item {
+            margin-left: 15px;
+  
+            .nav-link {
+              text-decoration: none;
+              font-size: 16px;
+  
+              &.active {
+                font-weight: bold;
+              }
+            }
+  
+            .dropdown-menu{
+               .dropdown-item {
+              text-decoration: none;
+            }
+          }
+          }
+        }
+  
+        .headerSearch {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+  
+          .input_search {
+            border: 1px solid $orange-100;
+            padding: 6px 12px; 
+            border-radius: 4px;
+          }
+  
+          .btnSearch {
+            border: none;
+            padding: 0 12px;
+            cursor: pointer;
+  
+            i {
+              font-size: $text-xl;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: $breakpoint-lg) {
+    .header--top{
+       .content {
+        .header--left,
+         .header--right {
+          ul{
+             li {
+          margin-right: 6px;
+  
+            a {
+              i{
+                font-size: $text-base;
+                }
+        }
+      }
+    }
+  }
+       }
+      }
+  
+    header{
+       .navbar{
+       .navbar-collapse{
+          .headerSearch{
+            margin-left: 0;
+          }
+       .navbar-nav{
+      .nav-item{
+        .dropdown-menu{
+          text-align: center;
+          position: static;
+          float: none;
+        }
+       .nav-link {
+      font-size: $text-sm;
+      text-align: center;
+    }
+  }
+       }
+      }
+    }
+  }
+  }
+  
+  @media (max-width: $breakpoint-md) {
+    .header--top {
+      display: none;
+    }
+  
+    header{
+     .navbar {
+      padding: 8px;
+  
+      .navbar-brand{
+         img {
+        max-height: 35px;
+      }
+    }
+  
+      .navbar-toggler{
+         .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  
+      .navbar-collapse{
+         .navbar-nav{
+         .nav-item {
+        margin-left: 10px;
+        .dropdown-menu{
+          text-align: center;
+          position: static;
+          float: none;
+        }
+  
+        .nav-link {
+          font-size: $text-sm;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+      .headerSearch{
+         .input_search {
+        padding: 4px 8px;
+        font-size: $text-sm;
+      }
+    }
+  
+      .headerSearch{
+         .btnSearch{
+         i {
+        font-size: $text-base;
+      }
+    }
+  }
+    }
+  }
+  }
+  

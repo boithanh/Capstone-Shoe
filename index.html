@@ -272,8 +272,8 @@
         </div>
         <div class="pick_content">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="swiper-wrapper" id="pick_shoe">
+                    <!-- <div class="swiper-slide">
                         <div class="swiper-slide-img">
                             <img src="./image/img018.jpg" alt="">
                         </div>
@@ -443,7 +443,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -464,8 +464,8 @@
         </div>
         <div class="deal_content">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="swiper-wrapper" id="deal_shoe">
+                    <!-- <div class="swiper-slide">
                         <div class="swiper-slide-img">
                             <img src="./image/img018.jpg" alt="">
                         </div>
@@ -572,7 +572,7 @@
                             </div>
                             <p>Rs. 53.00</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -653,15 +653,18 @@
                 <h3>suggest for you</h3>
             </div>
             <div class="suggest_navbar">
-                <div class="navbar_link  active" id="nav_allShoe">all shoe</div>
-                <div class="navbar_link" id="nav_casuals">casuals</div>
-                <div class="navbar_link" id="nav_sports">sports</div>
-                <div class="navbar_link" id="nav_sneakers">sneakers</div>
-                <div class="navbar_link" id="nav_boots">boots</div>
+                <button class="all_shoe_button">All Shoe</button>
+                <div class="navbar_links">
+                    <div class="navbar_link  active" id="nav_allShoe">all shoe</div>
+                    <div class="navbar_link" id="nav_casuals">casuals</div>
+                    <div class="navbar_link" id="nav_sports">sports</div>
+                    <div class="navbar_link" id="nav_sneakers">sneakers</div>
+                    <div class="navbar_link" id="nav_boots">boots</div>
+                </div>
             </div>
         </div>
-        <div class="suggest_bottom">
-            <div class="suggest_product">
+        <div class="suggest_bottom" id="suggest_shoe">
+            <!-- <div class="suggest_product">
                 <div class="suggest_item">
                     <div class="suggest_img">
                         <a href="#url">
@@ -900,7 +903,7 @@
                         <span>Rs. 53.00</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Frequently Asked Questions  -->
@@ -1296,7 +1299,7 @@
         <section class="copyright text-center">
             <div class="container-fluid">
                 <p class="mb-0">
-                    All Right Reserved © 2023 Designthemes
+                    All Right Reserved © 2024 Designthemes
                 </p>
             </div>
         </section>
@@ -1333,9 +1336,25 @@
             loop: true, // lặp lại các slide
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const allShoeButton = document.querySelector('.all_shoe_button');
+            const navbarLinks = document.querySelector('.navbar_links');
+
+            allShoeButton.addEventListener('click', function () {
+                navbarLinks.classList.toggle('active');
+            });
+        });
+    </script>
     <!-- back to top cody house js  -->
     <script src="./js/back-to-top-master/assets/js/util.js"></script>
     <script src="./js/back-to-top-master/assets/js/main.js"></script>
+    <!-- AXIOS Js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+        integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
