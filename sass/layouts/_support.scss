@@ -1,5 +1,5 @@
-.support_shoe{
-    .support_top{
+.support_shoe {
+    .support_top {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
@@ -11,8 +11,9 @@
         text-align: center;
         align-items: center;
         margin-bottom: 0;
-        .support_top_item{
-            span{
+
+        .support_top_item {
+            span {
                 color: $color;
                 font-size: $text-1xl;
                 font-weight: 600;
@@ -22,13 +23,15 @@
         }
 
     }
-    .support_bottom{
+
+    .support_bottom {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         // gap: 10px;
         max-width: 100%;
         margin: 0 auto;
-        .support_item{
+
+        .support_item {
             position: relative;
             display: flex;
             justify-content: center;
@@ -36,22 +39,25 @@
             // border: 5px solid $orange-100;
             // border-radius: 10em;
             // Để hình ảnh không tràn ra ngoài border 
-            overflow: hidden; 
-            width: 100%; 
+            overflow: hidden;
+            width: 100%;
             height: 100%;
-            img{
+
+            img {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                &:hover{
-                    .icon_overlay{
+
+                &:hover {
+                    .icon_overlay {
                         opacity: 1;
                     }
                 }
             }
+
             .icon_overlay {
                 position: absolute;
-                top: 50%;  // Center vertically
+                top: 50%; // Center vertically
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background: rgba(255, 255, 255, 0.1);
@@ -60,7 +66,7 @@
                 padding: 96px 109px;
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out;
-                
+
                 a {
                     font-size: $text-5xl;
                     color: $black-100;
@@ -71,14 +77,75 @@
                     background-color: $color;
                     padding: 20px;
                     transition: all 0.5s;
-                    &:hover{
+
+                    &:hover {
                         color: $yellow-100;
                     }
                 }
             }
-        
+
             &:hover .icon_overlay {
                 opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1248px) {
+    .support_shoe {
+        .support_top {
+            font-size: $text-xl;
+
+            .support_top_item {
+                span {
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .support_shoe {
+        .support_top {
+            font-size: $text-base;
+
+            .support_top_item {
+                span {
+                    font-size: $text-base;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .support_shoe {
+        .support_top {
+            padding: 10px;
+            font-size: $text-base;
+
+            .support_top_item {
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .support_shoe {
+        .support_top {
+            padding: 10px;
+            font-size: $text-base;
+
+            .support_top_item {
+
+                span {
+                    display: none;
+                }
             }
         }
     }

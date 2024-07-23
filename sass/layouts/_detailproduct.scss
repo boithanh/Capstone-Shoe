@@ -1,0 +1,440 @@
+.detail_product {
+    padding: 100px 40px 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .product_left {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        cursor: zoom-in;
+
+        img {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .product_img {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 10px;
+            max-width: 80px;
+            min-width: 80px;
+            height: 100%;
+
+            .product_item {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .product_right {
+        width: 100%;
+
+        .product_right_title {
+            font-family: $font-family;
+            font-weight: 400px;
+            line-height: 50px;
+            text-transform: capitalize;
+        }
+
+        .describe {
+            max-width: 600px;
+            font-size: $text-xl;
+            line-height: 26px;
+            margin-top: 18px;
+        }
+
+        .price {
+            font-size: $text-base;
+            font-weight: bold;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+
+        .vendor {
+            position: relative;
+            font-size: $text-base;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+
+        .product_type {
+            position: relative;
+            font-size: $text-base;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+
+        .stock {
+            width: 150px;
+            text-align: center;
+            background: $black-100;
+            color: $color;
+            padding: 6px 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .color {
+            position: relative;
+            font-size: $text-base;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+
+        .select_color {
+            position: relative;
+            display: flex;
+            justify-content: left;
+            transition: all 0.5s;
+            border: 1px solid transparent;
+
+            .btn-color {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin: 10px 5px 10px 0;
+                align-items: center;
+            }
+
+            .btn-black {
+                background-color: $black-100;
+            }
+
+            .btn-green {
+                background-color: green;
+            }
+
+            .btn-blue {
+                background-color: blue;
+            }
+
+            .btn-red {
+                background-color: red;
+            }
+
+            .btn-gray {
+                background-color: gray;
+            }
+        }
+
+        .material {
+            position: relative;
+            font-size: $text-base;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+
+        .outer_material {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            .material {
+                padding: 10px 15px;
+                color: $black-100;
+                background-color: #f0f0f0;
+                border-radius: 40px;
+                margin: 10px 5px 10px 0;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: $black-100;
+                    color: $color;
+                }
+            }
+
+            .active {
+                background-color: $black-100;
+                color: $color;
+            }
+        }
+
+        .size {
+            position: relative;
+            font-size: $text-base;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0;
+
+        }
+
+        .select_size {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            .size_item {
+                padding: 10px 15px;
+                color: $black-100;
+                background-color: #f0f0f0;
+                border-radius: 40px;
+                margin: 10px 5px 10px 0;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: $black-100;
+                    color: $color;
+                }
+            }
+
+            .active {
+                background-color: $black-100;
+                color: $color;
+            }
+        }
+
+        .btnSelect {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: $text-xl;
+            align-items: center;
+
+            .btn_quantity {
+                padding: 10px 20px;
+                color: $black-100;
+                background-color: #f0f0f0;
+                border-radius: 40px;
+                margin: 10px 5px 10px 0;
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                .btnTru {
+                    border: 0;
+                    width: 20px;
+                }
+
+                .btnCong {
+                    border: 0;
+                    width: 20px;
+                }
+            }
+
+            .addToCart {
+                .btnAddToCart {
+                    width: 496px;
+                    background-color: $color;
+                    border: 2px solid #f0f0f0;
+                    cursor: pointer;
+                    border-radius: 40px;
+                    padding: 5px;
+                    color: $black-100;
+                    text-transform: capitalize;
+                    font-family: $font-family;
+                    font-size: $text-2xl;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $yellow-100;
+                    }
+                }
+            }
+
+        }
+
+        .btn_Buy {
+            margin-top: 20px;
+
+            .btnBuy {
+                width: 100%;
+                background-color: $orange-100;
+                border: 2px solid #f0f0f0;
+                cursor: pointer;
+                border-radius: 40px;
+                padding: 10px;
+                color: $black-100;
+                text-transform: capitalize;
+                font-family: $font-family;
+                font-size: $text-2xl;
+                text-align: center;
+
+                &:hover {
+                    background-color: $yellow-100;
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .detail_product {
+        //   align-items: center;
+
+        .product_left {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+
+            .product_img {
+                max-width: 60px;
+                min-width: 60px;
+            }
+        }
+
+        .product_right {
+            width: 100%;
+            text-align: left;
+
+            .describe {
+                margin-top: 10px;
+            }
+
+            .btnSelect {
+
+
+                .addToCart {
+                    .btnAddToCart {
+                        width: 100%;
+                        font-size: $text-lg;
+                    }
+                }
+
+                .btn_quantity {
+                    width: 30%;
+                    justify-content: center;
+                }
+            }
+
+            .btn_Buy {
+                .btnBuy {
+                    width: 100%;
+                    font-size: $text-lg;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .detail_product {
+        flex-direction: column;
+        //   align-items: center;
+
+        .product_left {
+            img {
+                width: 700px;
+                height: 700px;
+            }
+
+            .product_img {
+                max-width: 60px;
+                min-width: 60px;
+            }
+        }
+
+        .product_right {
+            width: 100%;
+            text-align: left;
+
+            .describe {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .detail_product {
+        padding: 50px 20px 30px;
+
+        .product_left {
+            img {
+                width: 350px;
+                height: 350px;
+            }
+
+            .product_img {
+                max-width: 50px;
+                min-width: 50px;
+            }
+        }
+
+        .product_right {
+            .btnSelect .addToCart .btnAddToCart {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .detail_product {
+        padding: 30px 10px 20px;
+
+        .product_left {
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .product_img {
+                max-width: 40px;
+                min-width: 40px;
+            }
+        }
+
+        .product_right {
+            .describe {
+                font-size: $text-base;
+                line-height: 22px;
+            }
+
+            .price,
+            .vendor,
+            .product_type,
+            .stock,
+            .color,
+            .material,
+            .size {
+                font-size: $text-sm;
+            }
+
+            .btnSelect {
+
+
+                .addToCart {
+                    .btnAddToCart {
+                        width: 100%;
+                        font-size: $text-lg;
+                    }
+                }
+
+                .btn_quantity {
+                    width: 30%;
+                    justify-content: center;
+                }
+            }
+
+            .btn_Buy {
+                .btnBuy {
+                    width: 100%;
+                    font-size: $text-lg;
+                }
+            }
+        }
+    }
+}

@@ -1,62 +1,78 @@
-.brand_shoe{
-    .brand_title{
+.brand_shoe {
+    .brand_title {
         padding: 144px 40px 0;
         text-align: center;
         color: $black-100;
         line-height: 1.5;
-        .titlebrand{
+
+        .titlebrand {
             font-family: $font-family;
             font-weight: $fw;
             color: $orange-100;
             font-size: $text-4xl;
             text-transform: uppercase;
         }
-        .descriptionbrand{
+
+        .descriptionbrand {
             padding: 10px;
-            font-size: $text-base;    
+            font-size: $text-base;
         }
     }
-    .brand_content{
+
+    .brand_content {
         padding: 144px 40px 0;
         padding-top: 54px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 5 cột với chiều rộng bằng nhau */
-        gap: 20px; /* Khoảng cách giữa các cột */
-        width: 100%; /* Chiều rộng của container */
+        grid-template-columns: repeat(4, 1fr);
+        /* 5 cột với chiều rộng bằng nhau */
+        gap: 20px;
+        /* Khoảng cách giữa các cột */
+        width: 100%;
+
+        /* Chiều rộng của container */
         @media (max-width: $breakpoint-lg) {
             grid-template-columns: repeat(3, 1fr); // 3 cột trên thiết bị lớn
         }
-        
+
         @media (max-width: $breakpoint-md) {
             grid-template-columns: repeat(2, 1fr); // 2 cột trên thiết bị trung bình
         }
-        
+
         @media (max-width: $breakpoint-sm) {
             grid-template-columns: repeat(1, 1fr); // 1 cột trên thiết bị nhỏ
         }
-    
-        .img_center{
+
+        .img_center {
             border: 5px solid $orange-100;
             border-radius: 10em;
             overflow: hidden;
-            
+
         }
-        .brand_img{
-            a{
+
+        .brand_img {
+            a {
                 display: block;
-                width: 100%; 
+                width: 100%;
                 height: 100%;
-                
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     position: relative;
-                    
-                } 
-            } 
-            
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+                    &:hover {
+                        transform: scale(1.05) rotate(2deg) translateY(-10px);
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                    }
+
+                }
+            }
+
         }
-        .brand_img{
+
+        .brand_img {
             position: relative;
             display: flex;
             justify-content: center;
@@ -64,28 +80,28 @@
             border: 5px solid $orange-100;
             border-radius: 10em;
             // Để hình ảnh không tràn ra ngoài border 
-            overflow: hidden; 
-            width: 100%; 
+            overflow: hidden;
+            width: 100%;
             height: 100%;
-            
+
             .imgItem {
                 width: 100%;
                 height: 100%;
-                
+
                 a {
                     display: block;
                     width: 100%;
                     height: 100%;
-                    
+
                     img {
                         width: 100%;
                         height: 100%;
                         // hình ảnh bao phủ toàn bộ container và không bị méo 
-                        object-fit: cover; 
+                        object-fit: cover;
                     }
                 }
             }
-            
+
             .icon_overlay {
                 position: absolute;
                 bottom: 5%;
@@ -96,19 +112,20 @@
                 padding: 10px 20px;
                 border-radius: 10px;
                 text-align: center;
-               
-                
+
+
                 a {
-                    
+
                     color: white;
                     text-decoration: none;
-                    
+
                     h3 {
                         font-family: $font-family;
                     }
                 }
             }
         }
+
         .brand_imgcenter {
             position: relative;
             display: flex;
@@ -117,28 +134,28 @@
             border: 5px solid $orange-100;
             border-radius: 10em;
             // Để hình ảnh không tràn ra ngoài border 
-            overflow: hidden; 
-            width: 100%; 
+            overflow: hidden;
+            width: 100%;
             height: 100%;
-            
+
             .imgcenter {
                 width: 100%;
                 height: 100%;
-                
+
                 a {
                     display: block;
                     width: 100%;
                     height: 100%;
-                    
+
                     img {
                         width: 100%;
                         height: 100%;
                         // hình ảnh bao phủ toàn bộ container và không bị méo 
-                        object-fit: cover; 
+                        object-fit: cover;
                     }
                 }
             }
-            
+
             .icon_overlay {
                 position: absolute;
                 bottom: 5%;
@@ -149,28 +166,30 @@
                 padding: 10px 20px;
                 border-radius: 10px;
                 text-align: center;
-               
-                
+
+
                 a {
-                    
+
                     color: white;
                     text-decoration: none;
-                    
+
                     h3 {
                         font-family: $font-family;
                     }
                 }
             }
-        }  
+        }
     }
-    .banner_sale{
+
+    .banner_sale {
         margin: 60px 0;
         width: 100%;
         object-fit: contain;
-        .banner_img{
+
+        .banner_img {
             max-width: 100%;
             height: 100%;
         }
     }
-    
+
 }

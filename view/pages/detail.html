@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Shoe CapstoneJS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="../../image/icon.png" type="image/x-icon">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SWIPER CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+
+
+    <!-- CSS MAIN  -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section class="header--top container-fluid d-sm-block d-none">
+        <div class="content">
+            <div class="header--left">
+                <ul class="mb-0">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header--right">
+                <ul class="mb-0">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="../auth/register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="mainHeader">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="../../image/logo.svg" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                                    <li><a class="dropdown-item" href="#">Women's Wear</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Performance Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Casual Shoes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <form class="headerSearch" role="search">
+                            <input class="form-control input_search" type="search" placeholder="Enter Keyword"
+                                aria-label="Search" />
+                            <button title="btn_search" class="btn btnSearch" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- BODY  -->
+    <!-- CAROUSEL  -->
+    <section class="carousel container-fluid">
+        <!-- <div class="carousel_img">
+            <img src="../../image/banner_detail.png" alt="">
+        </div> -->
+        <div class="carousel_content">
+            <div class="carousel_text">
+                <h2 class="text_title">sandaun casual hiking shoes</h2>
+                <div class="text_item">
+                    <a href="#">all</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>sandaun casual hiking shoes</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- DETAIL SHOE  -->
+    <div class="detail_product" id="detail_shoe">
+        <div class="product_left">
+            <img src="../../image/img021.jpg" alt="">
+            <div class="product_img">
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+                <div class="product_item">
+                    <img src="../../image/img021.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product_right">
+            <h2 class="product_right_title">sandaun casual hiking shoes</h2>
+            <p class="describe">Nunc vehicula quam semper odio varius tincidunt. Vestibulum ante ipsum primis in
+                faucibus orci luctus et
+                ultrices posue.</p>
+            <p class="price">Rs. 53.00</p>
+            <p class="vendor">Vendor: Ally</p>
+            <p class="product_type">Product type: Casual Shoe</p>
+            <p class="stock">32 in stock</p>
+            <p class="color">color: Black</p>
+            <div class="select_color">
+                <button id="black" title="black" class="btn-color btn-black"></button>
+                <button id="green" title="green" class="btn-color btn-green"></button>
+                <button id="blue" title="blue" class="btn-color btn-blue"></button>
+                <button id="red" title="red" class="btn-color btn-red"></button>
+                <button id="gray" title="gray" class="btn-color btn-gray"></button>
+            </div>
+            <p class="material">Outer Material: Rubber</p>
+            <div class="outer_material">
+                <div class="material  active" id="rubber">Rubber</div>
+                <div class="material" id="wedge">Wedge</div>
+                <div class="material" id="leather">Leather</div>
+                <div class="material" id="synthetic">Synthetic</div>
+            </div>
+            <p class="size">Size: 32</p>
+            <div class="select_size">
+                <div class="size_item  active" id="32">32</div>
+                <div class="size_item" id="33">33</div>
+                <div class="size_item" id="34">34</div>
+                <div class="size_item" id="35">35</div>
+            </div>
+            <div class="btnSelect">
+                <div class="btn_quantity">
+                    <button class="btnTru" title="btnTru"> - </button>
+                    <span>1</span>
+                    <button class="btnCong" title="btnCong"> + </button>
+                </div>
+                <div class="addToCart">
+                    <button class="btnAddToCart">add to cart</button>
+                </div>
+            </div>
+            <div class="btn_Buy">
+                <button class="btnBuy">buy it now</button>
+            </div>
+        </div>
+    </div>
+    <!-- RECOMMENDED PRODUCTS -->
+    <div class="product_shoe">
+        <div class="product_title">
+            <h2 class="titleproduct">Recommended Products</h2>
+        </div>
+        <div class="product_content">
+            <div class="swiper swiper-container mySwiper">
+                <div class="swiper-wrapper" id="shoe_slide">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img018.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img030.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=1"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img040.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=2"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img050.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=3"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img060.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=4"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img070.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=5"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img080.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=6"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img035.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=7"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="../../image/img045.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-text">
+                            <div class="swiper_title">
+                                <h5>sunlight men jogger sneakers</h5>
+                                <a href="./detail.html?productid=8"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <p class="mb-0">Rs. 53.00</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination "></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer--sub">
+            <div class="container-fluid">
+                <div class="footer--text row">
+                    <div class="footer_item1 col-lg-4 col-sm-6">
+                        <div class="archives list-before-icon">
+                            <img src="../../image/logo.svg" alt="footer_logo">
+                            <p>1245, North Western Street<br>
+                                Europia. Lumbio</p>
+                            <p>Monday to Friday from 09:00 to 17:00.<br>
+                                Call Us+31 (0) 123 456 789</p>
+                        </div>
+                    </div>
+
+                    <div class="footer_item2 col-lg-2 col-sm-6">
+                        <div class="categories list-before-icon">
+                            <h6>Shop</h6>
+                            <ul class="ps-0">
+                                <li>
+                                    <a href="#">Sneakers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Moccasin</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hiking boot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Oxford shoe</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wellington boot</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_item2 col-lg-2 col-sm-6">
+                        <div class="contact href1--footer">
+                            <h6>Customer</h6>
+                            <ul class="ps-0">
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="#">Create Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shopping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_item3 col-lg-4 col-sm-6">
+                        <div class="about ps-lg-5">
+                            <h6>Sign up to be the first to<br> know about new<br>collections.</h6>
+                            <div class="form-email d-flex">
+                                <form class="form-input-email">
+                                    <input type="email" name="Email" id="email" placeholder="Enter your email"
+                                        class="form-control" />
+                                </form>
+                                <button title="btn_email" type="submit" class="btnEmail"><i
+                                        class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                            <div class="socail-icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="copyright text-center">
+            <div class="container-fluid">
+                <p>
+                    All Right Reserved © 2024 Designthemes
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!-- back to top js cody house  -->
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- SWIPER JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            // breakpoints: {
+            //     990: {
+            //         slidesPerView: 3,
+            //         spaceBetween: 30
+            //     },
+            //     768: {
+            //         slidesPerView: 1,
+            //         spaceBetween: 10
+            //     },
+            //     576: {
+            //         slidesPerView: 1,
+            //         spaceBetween: 20
+            //     },
+
+            // },
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+
+    <!-- back to top cody house js  -->
+    <script src="../../vendor/back-to-top-master/assets/js/util.js"></script>
+    <script src="../../vendor/back-to-top-master/assets/js/main.js"></script>
+    <!-- AXIOS Js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+        integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./js/detailrender.js"></script> -->
+    <script src="../../js/detail.js"></script>
+</body>
+
+</html>

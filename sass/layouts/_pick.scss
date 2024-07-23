@@ -1,25 +1,28 @@
-.pick_shoe{
+.pick_shoe {
     padding: 144px 40px 0;
-    .pick_title{
+
+    .pick_title {
         text-align: center;
         color: $black-100;
         line-height: 1.5;
-        .titlepick{
+
+        .titlepick {
             font-family: $font-family;
             font-weight: $fw;
             font-size: $text-4xl;
             text-transform: uppercase;
-           
+
         }
 
-        p{
+        p {
             padding: 10px;
-            font-size: $text-base; 
+            font-size: $text-base;
             margin-top: 20px;
             margin-bottom: 40px;
         }
     }
-    .pick_link{
+
+    .pick_link {
         cursor: pointer;
         margin-top: 20px;
         margin-bottom: 40px;
@@ -27,79 +30,98 @@
         justify-content: center;
         gap: 40px;
         text-align: center;
-        .picktext_link{
+
+        .picktext_link {
             padding: 20px;
             font-weight: 600;
             font-size: $text-2xl;
             text-transform: uppercase;
             color: $black-100;
             transition: all 0.5s;
-            
-            &:hover{
+
+            &:hover {
                 color: $orange-100;
             }
 
         }
-        .active{
+
+        .active {
             color: $orange-100;
         }
     }
-    .pick_content{
-        .swiper{
-            .swiper-wrapper{
-                .swiper-slide{
+
+    .pick_content {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
-                    .swiper-slide-img{
+
+                    .swiper-slide-img {
                         height: 70%;
-                        img{
+                        cursor: zoom-in;
+
+                        img {
                             width: 100%;
                             height: 100%;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                transform: scale(1.05);
+                            }
                         }
                     }
-                    .swiper-slide-text{
+
+                    .swiper-slide-text {
                         padding: 30px;
                         height: 30%;
-                        
-                        .swiper_title{
-                           display: flex;
-                           justify-content: space-between;
-                           gap: 10px;
-                           cursor: pointer;
-                            h5{
+
+                        .swiper_title {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 10px;
+                            cursor: pointer;
+
+                            h5 {
                                 font-family: $font-family;
                                 font-weight: $fw;
                                 font-size: $text-xl;
                                 text-transform: capitalize;
                                 color: $black-100;
                                 transition: all 0.5s;
-                                &:hover{
+
+                                &:hover {
                                     color: $yellow-100;
-                                }  
+                                }
                             }
-                            a{
+
+                            a {
                                 width: 60px;
                                 height: 60px;
                                 border-radius: 50%;
                                 line-height: 60px;
                                 background-color: $orange-100;
                                 text-align: center;
-                                .fa-cart-shopping{
+
+                                .fa-cart-shopping {
                                     color: $color;
                                     font-size: $text-xl;
                                 }
-                                &:hover{
+
+                                &:hover {
                                     background-color: $yellow-100;
-                                    .fa-cart-shopping{
+
+                                    .fa-cart-shopping {
                                         color: $black-100;
                                     }
                                 }
 
                             }
                         }
-                        .star{
-                            .fa-star{
+
+                        .star {
+                            .fa-star {
                                 color: $yellow-100;
                             }
                         }
@@ -108,10 +130,12 @@
             }
         }
     }
-    .swiper-pagination{
+
+    .swiper-pagination {
         display: none;
     }
-    .pick_button{
+
+    .pick_button {
         left: 40%;
         position: absolute;
         z-index: 1;
@@ -120,21 +144,229 @@
         padding: 1rem 3rem;
         transition: all 0.5s;
         margin-top: 20px;
-        a{
-        font-family: $font-family;
-        color: $black-100;
-        font-size: 20px;
+
+        a {
+            font-family: $font-family;
+            color: $black-100;
+            font-size: 20px;
         }
-        &:hover{
+
+        &:hover {
             background-color: $orange-100;
-            a{
-                color: $color;   
+
+            a {
+                color: $color;
             }
-        }}
+        }
+    }
 }
-// // Hiển thị trên các thiết bị khác
-// @media (max-width:$breakpoint-lg) {
-//     .pick_shoe{
-//         padding: ;
-//     }
-// }
+
+@media (max-width: 1248px) {
+    .pick_shoe {
+        padding: 80px 30px 35px;
+
+        .pick_title {
+            .titlepick {
+                font-size: $text-3xl;
+            }
+        }
+
+        .pick_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 20px;
+
+                            .swiper_title {
+                                h5 {
+                                    font-size: $text-lg;
+                                }
+
+                                a {
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-lg;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pick_button {
+            left: 35%;
+
+        }
+    }
+}
+
+
+@media (max-width: 990px) {
+    .pick_shoe {
+        padding: 80px 30px 35px;
+
+        .pick_title {
+            .titlepick {
+                font-size: $text-3xl;
+            }
+        }
+
+        .pick_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 20px;
+
+                            .swiper_title {
+                                h5 {
+                                    font-size: $text-lg;
+                                }
+
+                                a {
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-lg;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pick_button {
+            left: 30%;
+            margin-top: 10px;
+        }
+    }
+}
+
+/* For devices with width <= 768px */
+@media (max-width: 768px) {
+    .pick_shoe {
+        padding: 60px 20px 25px;
+
+        .pick_title {
+            .titlepick {
+                font-size: $text-2xl;
+            }
+        }
+
+        .pick_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 15px;
+
+                            .swiper_title {
+                                gap: 5px;
+
+                                h5 {
+                                    font-size: $text-base;
+                                }
+
+                                a {
+                                    width: 45px;
+                                    height: 45px;
+                                    line-height: 45px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-base;
+                                    }
+                                }
+                            }
+
+                            .star {
+                                .fa-star {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pick_button {
+            left: 18%;
+            padding: 8px 16px;
+            margin-top: 0;
+        }
+    }
+}
+
+/* For devices with width <= 576px */
+@media (max-width: 576px) {
+    .pick_shoe {
+        padding: 40px 10px 15px;
+
+        .pick_title {
+            .titlepick {
+                font-size: $text-xl;
+            }
+        }
+
+        .pick_content {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper-slide-text {
+                            padding: 10px;
+
+                            .swiper_title {
+                                gap: 5px;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h5 {
+                                    font-size: $text-sm;
+                                    text-align: center;
+                                }
+
+                                a {
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    margin-top: 10px;
+
+                                    .fa-cart-shopping {
+                                        font-size: $text-sm;
+                                    }
+                                }
+                            }
+
+                            .star {
+                                .fa-star {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pick_button {
+            line-height: 8px;
+            left: 35%;
+            margin-top: 0;
+            padding: 3px 4px;
+
+            a {
+                font-size: 8px;
+            }
+        }
+    }
+}

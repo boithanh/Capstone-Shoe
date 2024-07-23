@@ -1,45 +1,53 @@
-.carousel{
-    .carousel-indicators{
+.carousel {
+    .carousel-indicators {
         display: none;
     }
-    .carousel-inner{
+
+    .carousel-inner {
         cursor: grab;
-        .carousel-item{
-            img{
+
+        .carousel-item {
+            img {
                 display: block;
                 width: 100%;
-                
+
             }
-            .carousel-caption{
+
+            .carousel-caption {
                 margin-top: 75px;
                 top: 0;
                 left: 0;
-                
+
                 padding: 55px 35px;
                 text-align: left;
-                .baner_title{
+
+                .baner_title {
                     font-size: 20px;
                     color: $black-100;
                 }
-                h2{
+
+                h2 {
                     font-size: $text-title;
                     font-weight: $fw;
                     color: $black-100;
                     margin-top: 10px;
                     font-family: $font-family;
                     line-height: 1.5;
-                    span{
+
+                    span {
                         color: $orange-100;
-                    }  
+                    }
                 }
-                .baner_text{
+
+                .baner_text {
                     margin: 20px 0;
                     color: $black-100;
                     font-size: 20px;
                     color: $black-100;
 
                 }
-                .baner_button{
+
+                .baner_button {
                     content: "";
                     position: absolute;
                     z-index: 1;
@@ -48,20 +56,118 @@
                     padding: 1rem 3rem;
                     transition: all 0.5s;
                     margin-top: 20px;
-                    a{
-                    font-family: $font-family;
-                    color: $color;
-                    font-size: 20px;
+
+                    a {
+                        font-family: $font-family;
+                        color: $color;
+                        font-size: 20px;
                     }
-                    &:hover{
+
+                    &:hover {
                         background-color: $yellow-100;
-                        a{
+
+                        a {
                             color: $black-100;
                         }
                     }
                 }
             }
 
+        }
+    }
+}
+
+
+@media (max-width: 1248px) {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    h2 {
+                        font-size: $text-3xl;
+                        line-height: 1;
+                    }
+
+                    .baner_text {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    margin-top: 0;
+
+                    h2 {
+                        font-size: $text-2xl;
+                        line-height: 1;
+                    }
+
+                    .baner_text {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    margin-top: 0;
+                    padding: 10px 20px;
+
+                    h2 {
+                        font-size: $text-base;
+                        line-height: 1;
+                    }
+
+                    .baner_text {
+                        display: none;
+                    }
+
+                    .baner_button {
+                        margin-top: 10px;
+                        padding: 2px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    margin-top: 0;
+                    padding: 10px 20px;
+
+                    h2 {
+                        font-size: $text-base;
+                        line-height: 1;
+                    }
+
+                    .baner_text {
+                        display: none;
+                    }
+
+                    .baner_button {
+                        margin-top: 10px;
+                        padding: 2px 5px;
+                    }
+                }
+            }
         }
     }
 }
