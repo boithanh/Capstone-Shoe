@@ -1242,144 +1242,220 @@ header .navbar .navbar-collapse .headerSearch .btnSearch i {
   height: 100%;
 }
 
-.question_shoe {
-  padding: 144px 40px 0;
+.suggest_shoe {
+  padding: 60px 40px 0;
+}
+.suggest_shoe .suggest_top {
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  color: #191919;
 }
-.question_shoe .question_left {
-  width: 50%;
-}
-.question_shoe .question_left .question_title h3 {
+.suggest_shoe .suggest_top .suggest_title h3 {
   font-family: "Audiowide", sans-serif;
   font-weight: 400px;
   font-size: 45px;
   text-transform: capitalize;
   color: #191919;
-  margin-bottom: 50px;
 }
-.question_shoe .question_left .accordion-flush .accordion-item {
-  background-color: #F3F3F3;
-  border: 0;
-  border-radius: 20px;
-  padding: 2rem;
-  margin-bottom: 2rem;
+.suggest_shoe .suggest_top .suggest_navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
 }
-.question_shoe .question_left .accordion-flush .accordion-item h2 button {
-  background-color: #F3F3F3;
+.suggest_shoe .suggest_top .suggest_navbar .all_shoe_button {
+  display: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 14px 40px;
+  border: 1px solid #e1680b;
+  border-radius: 30px;
+  background-color: #fbbf18;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.suggest_shoe .suggest_top .suggest_navbar .all_shoe_button:hover {
+  border: 1px solid #fbbf18;
+  background-color: #e1680b;
+  color: #191919;
+}
+.suggest_shoe .suggest_top .suggest_navbar .navbar_links {
+  display: flex;
+  gap: 20px;
+}
+.suggest_shoe .suggest_top .suggest_navbar .navbar_links .navbar_link {
   font-family: "Audiowide", sans-serif;
   font-weight: 400px;
   font-size: 24px;
+  color: #191919;
   text-transform: capitalize;
-  color: #191919;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #e1680b;
+  font-weight: 400px;
+  border-radius: 30px;
+  transition: all 0.5s;
 }
-.question_shoe .question_left .accordion-flush .accordion-collapse .accordion-body p {
-  color: #191919;
-  font-size: 20px;
+.suggest_shoe .suggest_top .suggest_navbar .navbar_links .navbar_link:hover {
+  border: 1px solid #fbbf18;
+  color: #e1680b;
 }
-.question_shoe .question_right {
-  width: 50%;
+.suggest_shoe .suggest_top .suggest_navbar .active {
+  color: #e1680b;
+  border: 1px solid #fbbf18;
 }
-.question_shoe .question_right .question_img {
+.suggest_shoe .suggest_bottom {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item:hover .suggest_icon {
+  bottom: 0;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_img {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+  z-index: 1;
 }
-.question_shoe .question_right .question_img .img_queston {
-  width: 70%;
-  height: auto;
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_img img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.5s;
 }
-.question_shoe .question_right .question_img .icon_question {
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_img img:hover {
+  transform: scale(1.1) rotate(10deg) translate(10px, 10px) skew(5deg, 5deg);
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_icon {
   position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0);
-  color: white;
-  padding: 10px 20px;
+  bottom: -227px;
+  margin: 0;
+  background: rgba(8, 8, 8, 0);
+  padding: 20px 0;
+  width: 100%;
   text-align: center;
+  transition: all 0.5s;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_icon .suggest_icon_design {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  background: #e1680b;
+  display: inline-block;
+  margin-left: 10px;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_icon .suggest_icon_design .fa-cart-shopping {
+  color: #ffffff;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_text {
+  padding: 20px;
+  text-transform: capitalize;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_text .suggest_text_name {
+  color: #191919;
+  transition: all 0.5s;
+}
+.suggest_shoe .suggest_bottom .suggest_product .suggest_item .suggest_text .suggest_text_name:hover {
+  color: #fbbf18;
 }
 
 @media (max-width: 1248px) {
-  .question_shoe {
-    align-items: center;
-    text-align: center;
-    padding: 100px 50px 0;
+  .suggest_shoe .suggest_top {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
-  .question_shoe .question_left {
-    width: 100%;
+  .suggest_shoe .suggest_top .suggest_navbar {
+    margin-top: 20px;
   }
-  .question_shoe .question_right {
-    width: 100%;
-    padding-top: 50px;
-  }
-  .question_shoe .question_right .question_img .img_queston {
-    width: 95%;
-    height: auto;
+  .suggest_shoe .suggest_bottom {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 990px) {
-  .question_shoe {
-    align-items: center;
-    text-align: center;
-    padding: 100px 50px 0;
+  .suggest_shoe .suggest_top .suggest_navbar {
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .question_shoe .question_left {
-    width: 100%;
-  }
-  .question_shoe .question_left .question_title h3 {
-    font-size: 35px;
-    margin-bottom: 30px;
-  }
-  .question_shoe .question_left .accordion-flush .accordion-item {
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-  .question_shoe .question_right {
-    width: 100%;
-    padding-top: 50px;
-  }
-  .question_shoe .question_right .question_img .img_queston {
-    width: 95%;
-    height: auto;
+  .suggest_shoe .suggest_bottom {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 768px) {
-  .question_shoe {
+  .suggest_shoe .suggest_top {
+    align-items: center;
+  }
+  .suggest_shoe .suggest_top .suggest_title h3 {
+    font-size: 28px;
+  }
+  .suggest_shoe .suggest_top .suggest_navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .suggest_shoe .suggest_top .suggest_navbar .all_shoe_button {
+    display: block;
+  }
+  .suggest_shoe .suggest_top .suggest_navbar .navbar_links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #e1680b;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+  }
+  .suggest_shoe .suggest_top .suggest_navbar .navbar_links .navbar_link {
+    padding: 0.5rem 1.5rem;
+    font-size: 20px;
+  }
+  .suggest_shoe .suggest_top .suggest_navbar .active {
+    display: none;
+  }
+  .suggest_shoe .suggest_bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .suggest_shoe {
+    padding: 20px 10px 0;
+  }
+  .suggest_shoe .suggest_top {
     align-items: center;
     text-align: center;
-    padding: 60px 15px 0;
   }
-  .question_shoe .question_left {
-    width: 100%;
+  .suggest_shoe .suggest_top .suggest_title h3 {
+    font-size: 24px;
   }
-  .question_shoe .question_left .question_title h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  .suggest_shoe .suggest_top .suggest_navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  .question_shoe .question_left .accordion-flush .accordion-item {
-    padding: 8px;
-    margin-bottom: 8px;
+  .suggest_shoe .suggest_top .suggest_navbar .navbar_link {
+    padding: 0.5rem 1.5rem;
+    font-size: 18px;
   }
-  .question_shoe .question_left .accordion-flush .accordion-item h2 button {
-    font-size: 10px;
-  }
-  .question_shoe .question_right {
-    width: 100%;
-    padding-top: 20px;
-  }
-  .question_shoe .question_right .question_img .img_queston {
-    width: 95%;
-    height: auto;
-  }
-  .question_shoe .question_right .question_img .icon_question {
-    top: 50%;
-    bottom: 0;
-    width: 80%;
-    height: auto;
+  .suggest_shoe .suggest_bottom {
+    grid-template-columns: 1fr;
   }
 }
 .question_shoe {
@@ -2430,7 +2506,7 @@ footer .footer--sub .footer_item3 .about .form-email .btnEmail {
   position: absolute;
   background-color: #e1680b;
   color: #ffffff;
-  right: 210px;
+  right: 130px;
   width: 38px;
   height: 38px;
   border-radius: 8px;
