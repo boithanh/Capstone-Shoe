@@ -68,6 +68,10 @@
       width: 100%;
       max-width: 700px;
       max-height: 562px;
+      @media screen and (max-width: 1023.98px)
+      {
+        max-width: 100%;
+      }
     }
   }
 }
