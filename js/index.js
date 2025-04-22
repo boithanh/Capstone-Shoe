@@ -21,7 +21,7 @@ function renderArrShoePick(arr) {
         content += `
           <div class="swiper-slide">
                           <div class="swiper-slide-img">
-                              <img src=${image} alt="">
+                              <img src=${image.includes(".jpg") || image.includes(".png") ? image : "image/out-of-stock.png"} alt="">
                           </div>
                           <div class="swiper-slide-text">
                               <div class="swiper_title">
@@ -37,7 +37,7 @@ function renderArrShoePick(arr) {
                                   <i class="fa-solid fa-star"></i>
                               </div>
                           </div>
-                      </div>
+            </div>
           `;
     }
     document.getElementById("pick_shoe").innerHTML = content;
@@ -50,7 +50,7 @@ function renderArrShoeDeal(arr) {
         content += `
             <div class="swiper-slide">
                             <div class="swiper-slide-img">
-                                <img src=${image} alt="">
+                                <img src=${image.includes(".jpg") || image.includes(".png") ? image : "image/out-of-stock.png"} alt="">
                             </div>
                             <div class="swiper-slide-text">
                                 <div class="swiper_title">
@@ -81,7 +81,7 @@ function renderArrShoeSuggest(arr) {
                   <div class="suggest_item">
                       <div class="suggest_img">
                           <a href="#url">
-                              <img src=${image} alt="img_suggest">
+                              <img src=${image.includes(".jpg") || image.includes(".png") ? image : "image/out-of-stock.png"} alt="img_suggest">
                               <div class="suggest_icon">
                                   <div class="suggest_icon_box">
                                       <a href="./../view/pages/detail.html?productid=${id}" class="suggest_icon_design">

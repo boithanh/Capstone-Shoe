@@ -54,6 +54,8 @@ function getValueForm() {
         let { id, value, type } = item
         let dataValidation = item.getAttribute("data-validation");
         if (type === 'radio' && item.checked) {
+            console.log(user["gender"]);
+
             user["gender"] = value;
         }
         // else if (id == 'password' || id == 'cfPassword') {
